@@ -1,0 +1,18 @@
+body {
+  padding-top: 50px;
+  font-family: Roboto;
+}
+
+#top-logo {
+  max-height: 100%;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.jumbotron {
+	background: #2983A6;
+	color: white;
+	text-align: center;
+}
