@@ -1,18 +1,24 @@
-body {
-  padding-top: 50px;
-  font-family: Roboto;
+h1 {
+  font-size: 48pt;
 }
 
-#top-logo {
-  max-height: 100%;
+h1, h3 {
+  font-family: 'Playfair Display', serif;
 }
 
-.navbar {
-	margin-bottom: 0;
+h2 {
+  font-size: 24pt;
+  font-family: 'Overpass', sans-serif;
+  font-weight:200;
 }
 
-.jumbotron {
-	background: #2983A6;
-	color: white;
-	text-align: center;
+h3 {
+  font-size: 24pt;
+  text-align: center;
+}
+
+p {
+  font-size: 14pt;
+  font-family: 'Overpass', sans-serif;
+  font-weight:300;
 }
