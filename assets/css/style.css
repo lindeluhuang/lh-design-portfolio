@@ -1,0 +1,281 @@
+/* Responsive grid system ----------------------------------------------*/
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row [class^="col"] {
+  float: left;
+  min-height: 0.125rem;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  width: 100%;
+}
+
+.col-1-sm {width: 4.33%;}
+.col-2-sm {width: 12.66%;}
+.col-3-sm {width: 21%;}
+.col-4-sm {width: 29.33%;}
+.col-5-sm {width: 37.66%;}
+.col-6-sm {width: 46%;}
+.col-7-sm {width: 54.33%;}
+.col-8-sm {width: 62.66%;}
+.col-9-sm {width: 71%;}
+.col-10-sm {width: 79.33%;}
+.col-11-sm {width: 87.66%;}
+.col-12-sm {width: 96%;}
+
+.hidden-sm {
+  display: none;
+}
+
+
+/* Styes, below 600px  ----------------------------------------------*/
+body {
+  font-size: 14pt;
+  font-family: 'Overpass', sans-serif;
+  font-weight:300;
+  color: #091017;
+}
+
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.no-margin-sm {
+  margin: 0;
+}
+
+/* Nav bar */
+
+.LHlogo {
+  width: 45%;
+  height: 45%;
+  max-height: 100%;
+/*  max-width: 202px;
+  max-height: 50px; */
+  display: block;
+  margin: 0 auto;
+}
+
+.all-nav-links {
+  text-transform: uppercase;
+  font-size: 12pt;
+  width: 360px;
+  margin: auto;
+}
+
+.nav-link {
+  padding: 0 0 0 1.5em;
+  display: inline-block;
+}
+
+.nav-link a:link,
+.nav-link a:hover,
+.nav-link a:active,
+.nav-link a:visited
+{
+  font-weight:300;
+  color: #091017;
+  text-decoration: none;
+}
+
+#LinkedInlogo-top {
+  height: 20px;
+  transform: translate(0, 3px);
+}
+
+/* Content */
+
+h1, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 1em 0 0 0;
+}
+
+h2 {
+  font-family: 'Overpass', sans-serif;
+  font-weight:200;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+h3 {
+  display: block;
+  font-size: 18pt;
+  text-align: center;
+  margin: 3em;
+}
+
+.hero-photo {
+  width: 100%;
+}
+
+.case-study-photo {
+  width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+.footer-contact-link {
+  display: inline-block;
+}
+
+/* Footer */
+.site-footer {
+  padding-top: 6em;
+}
+
+.all-footer-contact-links {
+  text-align: center;
+}
+
+.bottom-icon {
+  max-height: 40px;
+  padding: 0 20px;
+}
+
+.footer-text {
+  font-size: .8em;
+}
+
+
+/* From 600px to 960 px ----------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  .col-1 {width: 4.33%;}
+  .col-2 {width: 12.66%;}
+  .col-3 {width: 21%;}
+  .col-4 {width: 29.33%;}
+  .col-5 {width: 37.66%;}
+  .col-6 {width: 46%;}
+  .col-7 {width: 54.33%;}
+  .col-8 {width: 62.66%;}
+  .col-9 {width: 71%;}
+  .col-10 {width: 79.33%;}
+  .col-11 {width: 87.66%;}
+  .col-12 {width: 96%;}
+
+  .hidden-sm {display: block;}
+
+  .container {
+    width: 90%;
+  }
+
+  .row [class^="col"] {
+    margin: 0.5rem 2%;
+  }
+
+  .LHlogo {
+    height: 50px;
+    width: 203px;
+    float: left;
+  }
+
+  .all-nav-links {
+    text-transform: uppercase;
+    font-size: 12pt;
+    width: 360px;
+    padding-left: 2px;
+    float:right;
+  }
+
+  .hero-row {
+    margin: 2em 0;
+  }
+
+  .hero-text-box-outer {
+    height: 24em;
+    position: relative;
+  }
+
+  .hero-text-box-inner {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .all-footer-contact-links {
+    float:right;
+  }
+
+}
+
+/* Above 960 px ----------------------------------------------*/
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 90%;
+    max-width: 960px;
+  }
+
+  .hero-photo {
+    max-height: 25em;
+    width: auto;
+    float: right;
+  }
+
+  h1 {
+    font-size: 2.8em;
+    margin: 1em 0 0 0;
+  }
+
+  h2 {
+    font-family: 'Overpass', sans-serif;
+    font-weight:200;
+    font-size: 1.8em;
+    margin: 0;
+  }
+
+}
+
+
+
+/* Mid size ----------------------------------------------*/
+
+/* Grid wrapper
+.l-wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/*
+
+
+/* Grid wrapper
+.l-wrapper {
+  width:80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  height: 600px;
+  float: right;
+}
