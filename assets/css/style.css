@@ -128,7 +128,7 @@ h3 {
   display: block;
   font-size: 18pt;
   text-align: center;
-  margin: 3em;
+  margin: 3em 0 1em 0;
 }
 
 .hero-photo {
@@ -154,13 +154,46 @@ h3 {
   margin: 0.5rem 0;
 }
 
+p a:link,
+p a:active,
+p a:visited
+{
+  font-weight: 800;
+  color: #091017;
+  text-decoration: none;
+}
+
+#email-sentence {
+  display: inline-block;
+}
+
+.email-img {
+  display: inline-block;
+  height: 20px;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+#LinkedInlogo-inline {
+  height: 20px;
+  transform: translate(0, 3px);
+  margin-left: 4px;
+}
+
+/* Footer */
+
 .footer-contact-link {
   display: inline-block;
 }
 
-/* Footer */
 .site-footer {
   padding-top: 6em;
+}
+
+.footer-width {
+  background-color: #d7e0e8;
 }
 
 .all-footer-contact-links {
@@ -168,8 +201,8 @@ h3 {
 }
 
 .bottom-icon {
-  max-height: 40px;
-  padding: 0 20px;
+  max-height: 20px;
+  padding: 0 10px;
 }
 
 .footer-text {
@@ -200,6 +233,7 @@ h3 {
 
   .row [class^="col"] {
     margin: 0.5rem 2%;
+
   }
 
   .LHlogo {
