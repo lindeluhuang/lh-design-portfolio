@@ -1,3 +1,10 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+
 /* Responsive grid system ----------------------------------------------*/
 
 .container {
@@ -5,7 +12,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .row {
   position: relative;
   width: 100%;
@@ -45,7 +51,6 @@
   display: none;
 }
 
-
 /* Styes, below 600px  ----------------------------------------------*/
 body {
   font-size: 14pt;
@@ -69,20 +74,32 @@ body {
 
 /* Nav bar */
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+.header {
+  background-color: white;
+  z-index: 1;
+}
+
 .LHlogo {
   width: 45%;
   height: 45%;
   max-height: 100%;
-/*  max-width: 202px;
-  max-height: 50px; */
   display: block;
-  margin: 0 auto;
+  margin:0 auto;
+  padding-top: 10px;
 }
 
 .all-nav-links {
   text-transform: uppercase;
-  font-size: 12pt;
-  width: 360px;
+  font-size: 10pt;
+  width: 320px;
   margin: auto;
 }
 
@@ -96,17 +113,21 @@ body {
 .nav-link a:active,
 .nav-link a:visited
 {
-  font-weight:300;
+  font-weight:700;
   color: #091017;
   text-decoration: none;
 }
 
 #LinkedInlogo-top {
   height: 20px;
-  transform: translate(0, 3px);
+  transform: translate(0, 4px);
 }
 
-/* Content */
+.wrapper {
+  margin-top: 30%;
+}
+
+/* Main Content */
 
 h1, h3 {
   font-family: 'Playfair Display', serif;
@@ -119,7 +140,7 @@ h1 {
 
 h2 {
   font-family: 'Overpass', sans-serif;
-  font-weight:200;
+  font-weight: 200;
   font-size: 1.2em;
   margin: 0;
 }
@@ -158,7 +179,7 @@ p a:link,
 p a:active,
 p a:visited
 {
-  font-weight: 800;
+  font-weight: 700;
   color: #091017;
   text-decoration: none;
 }
@@ -227,6 +248,10 @@ p a:hover {
 
   .hidden-sm {display: block;}
 
+  .wrapper {
+    margin-top: 6em;
+  }
+
   .container {
     width: 90%;
   }
@@ -240,13 +265,15 @@ p a:hover {
     height: 50px;
     width: 203px;
     float: left;
+    padding-top: 3px;
   }
 
   .all-nav-links {
     text-transform: uppercase;
     font-size: 12pt;
-    width: 360px;
+    width: 400px;
     padding-left: 2px;
+    text-align: right;
     float:right;
   }
 
