@@ -197,13 +197,7 @@ p a:hover {
   text-decoration: underline;
 }
 
-#Maillogo-inline {
-  height: 20px;
-  transform: translate(0, 3px);
-  margin-left: 4px;
-}
-
-#LinkedInlogo-inline {
+.icon-inline {
   height: 20px;
   transform: translate(0, 3px);
   margin-left: 4px;
