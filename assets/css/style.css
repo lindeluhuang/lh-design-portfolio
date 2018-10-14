@@ -149,7 +149,6 @@ h3 {
   display: block;
   font-size: 18pt;
   text-align: center;
-  margin: 3em 0 1em 0;
 }
 
 .hero-photo {
@@ -167,6 +166,10 @@ h3 {
 
 .hero-text-box-inner {
   padding: 0 0 .5em .8em;
+}
+
+.section-title {
+  padding-top: 4em;
 }
 
 .case-study-photo {
