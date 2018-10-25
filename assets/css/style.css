@@ -172,6 +172,10 @@ h3 {
   padding-top: 5em;
 }
 
+.section-padding {
+  padding: 5em;
+}
+
 .case-study-photo {
   width: 100%;
   height: auto;
@@ -311,6 +315,13 @@ p a:hover {
     height: 15em;
     max-width: 864px;
     z-index: -1;
+  }
+
+
+  #blockText {
+    width: 70%;
+    margin: 0 15% 0 15%;
+    text-align: left;
   }
 
   .all-footer-contact-links {
