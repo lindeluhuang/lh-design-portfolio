@@ -51,6 +51,10 @@
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Styes, below 600px  ----------------------------------------------*/
 body {
   font-size: 14pt;
@@ -168,7 +172,7 @@ h3 {
 }
 
 .section-title {
-  padding-top: 5em;
+  padding-top: 3em;
 }
 
 .section-padding {
