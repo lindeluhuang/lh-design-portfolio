@@ -209,8 +209,12 @@ p a:visited
   text-decoration: none;
 }
 
+.aboutMeLogoWrapper {
+  text-align: center;
+}
+
 .aboutMeLogo {
-  width: 50%;
+  width: 10%;
 }
 
 #email-sentence {
