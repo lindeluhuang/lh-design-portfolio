@@ -1,404 +1,442 @@
+/* -------- Page-wide -------- */
 
-* {
-    box-sizing: border-box;
-}
+:root {
+  --brand-color:#4A82BB;
+  --text-color: #091017;
+  --dark-grey-color: #B5BABF;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans-serif: 'Overpass', sans-serif;
+  --jottfulblog-color: #F09061;
+  --webdesign-color: #A4BF87;
+  --printdesign-color: #FECB78;
 
-
-
-/* Responsive grid system ----------------------------------------------*/
-
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.row {
-  position: relative;
-  width: 100%;
-}
-
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.row [class^="col"] {
-  float: left;
-  min-height: 0.125rem;
-  margin: 0 1%;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-  width: 98%;
-}
-
-.col-1-sm {width: 4.33%;}
-.col-2-sm {width: 12.66%;}
-.col-3-sm {width: 21%;}
-.col-4-sm {width: 29.33%;}
-.col-5-sm {width: 37.66%;}
-.col-6-sm {width: 46%;}
-.col-7-sm {width: 54.33%;}
-.col-8-sm {width: 62.66%;}
-.col-9-sm {width: 71%;}
-.col-10-sm {width: 79.33%;}
-.col-11-sm {width: 87.66%;}
-.col-12-sm {width: 96%;}
-
-.hidden-sm {
-  display: none;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Styes, below 600px  ----------------------------------------------*/
 body {
-  font-size: 14pt;
-  font-family: 'Overpass', sans-serif;
-  font-weight:300;
-  color: #091017;
-}
-
-.wide-only{
-  display: none;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.no-margin-sm {
   margin: 0;
+  padding: 0;
+  background: white;
 }
 
-/* Nav bar */
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  left:0;
+img {
   width: 100%;
 }
 
-.header {
-  background-color: white;
-  z-index: 1;
+#extralongtopmargin {
+  margin-top: 400px;
 }
 
-.LHlogo {
-  width: 45%;
-  height: 45%;
-  max-height: 100%;
-  display: block;
-  margin:0 auto;
-  padding-top: 10px;
+/* -------- Navigation & Footer -------- */
+
+#lindeHuangLogo {
+  height: 40px;
+  width: auto;
+  transform: translate(0, 5px);
+  padding-left: 1.5em;
 }
 
-.all-nav-links {
-  font-size: 10pt;
-  width: 320px;
-  margin: auto;
+.main-nav ul {
+	margin: 1em 0 .5em 0;
+	text-align: center;
+  padding-left: 0;
+}
+.main-nav li {
+	display: inline;
+
+}
+.main-nav a {
+	display: inline-block;
+  padding: 0;
 }
 
-.nav-link {
-  padding: 0 0 0 1.5em;
+nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  padding: 1em 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+
+.main-nav li {
+  padding: 2em 1.5em 0 1.5em;
+  list-style: none;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.main-nav a {
+  color: var(--brand-color);
+}
+
+.icon-inline {
+  transform: translate(0, 2px);
+  height: 18px;
+  width: auto;
+}
+
+footer {
+  background-color: var(--dark-grey-color);
+  margin-top: 1em;
+  padding: 2em 1.5em;
+  font-size: .9em;
+  text-align: center;
+}
+
+footer ul, footer p {
+  /* margin: 0; */
+  padding-left:0;
+}
+
+footer li {
+  list-style: none;
   display: inline-block;
+  padding: 0 .5em;
 }
 
-.nav-link a:link,
-.nav-link a:hover,
-.nav-link a:active,
-.nav-link a:visited
-{
-  font-weight:300;
-  color: #091017;
-  text-decoration: none;
+/* -------- Content Grid -------- */
+
+article {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
-#LinkedInlogo-top {
-  height: 20px;
-  transform: translate(0, 4px);
+section {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-column-gap: 25px;
 }
 
-.wrapper {
-  margin-top: 30%;
+@media only screen and (max-width: 600px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-column-gap: 25px;
+  }
 }
 
-/* Main Content */
+.full-width {
+  grid-column: 1/-1
+}
 
-h1, h3 {
-  font-family: 'Playfair Display', serif;
+.partial-width {
+  grid-column: 3/11
+}
+
+@media only screen and (max-width: 600px) {
+  .partial-width {
+    grid-column: 2/6;
+  }
+}
+
+.image-full-width {
+  grid-column: 1/-1;
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+}
+
+.image-partial-width {
+  grid-column: 3/11;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-partial-width {
+    grid-column: 1/-1;
+  }
+}
+
+.image-half-width {
+  grid-column-start: span 6;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.image-third-width {
+  grid-column-start: span 4;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.image-half-width-centered {
+  grid-column: 4/9;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-half-width-centered {
+    grid-column: 1/-1;
+  }
+}
+
+.intro a {
+  grid-column-start: span 3;
+}
+
+.image-quarter-width {
+  grid-column-start: span 3;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+/* -------- Typography: Major Third scale -------- */
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+}
+
+h4, h5 {
+  font-family: var(--font-sans-serif);
 }
 
 h1 {
-  font-size: 2.2em;
-  margin: 1em 0 0 0;
+  margin: .8em 0 0 0;
+  font-size: 3.052em;
+  line-height: 1.2em;
+  text-align: center;
 }
 
 h2 {
-  font-family: 'Overpass', sans-serif;
-  font-weight: 200;
-  font-size: 1.2em;
-  margin: 0;
+  font-size: 2.441em;
+  margin: 2em 0 .5em 0;
+  right: 1em;
 }
 
 h3 {
-  display: block;
-  font-size: 18pt;
-  text-align: center;
+  font-size: 1.953em;
+  margin: .5em 0 .5em 0;
 }
 
-.hero-photo {
-  width: 100%;
-}
 
-.hero-background {
-  display: none;
-}
-
-.hero-text-box-outer {
-  background-image: url("../images/YellowHero.png");
-  padding-top: 3em;
-}
-
-.hero-text-box-inner {
-  padding: 0 0 .5em .8em;
-}
-
-.section-title {
-  padding-top: 4em;
-}
-
-.section-padding {
-  padding: 8em;
-}
-
-.case-study-photo {
-  width: 100%;
-  margin: 1.5rem 0;
-}
-
-.case-study-photo-hover {
-  width: 98%;
-  margin: 1.5rem 0;
-}
-
-p a:link,
-p a:active,
-p a:visited
-{
+h4 {
+  font-size: 1.563em;
   font-weight: 700;
-  color: #091017;
-  text-decoration: none;
+  margin: .7em 0 .2em 0;
+
 }
 
-.aboutMeLogoWrapper {
+h5 {
+  font-size: 1.25em;
+  font-weight: 700;
   text-align: center;
+  border-top: solid .08em var(--jottfulblog-color);
+  border-bottom: solid .08em var(--jottfulblog-color);
+  margin: 1em 0 .6em 0;
 }
 
-.aboutMeLogo {
-  width: 15%;
+
+body {
+  font-family: var(--font-sans-serif);
 }
 
-#email-sentence {
-  display: inline-block;
+p {
+  margin: 0 0 1em 0;
+  line-height: 1.8em;
 }
 
-.email-img {
-  display: inline-block;
-  height: 20px;
+p a {
+  font-weight: 700;
+  color: var(--brand-color)
 }
 
 p a:hover {
   text-decoration: underline;
 }
 
-.icon-inline {
-  height: 20px;
-  transform: translate(0, 3px);
-  margin-left: 4px;
+a {
+  text-decoration: none;
 }
 
-/* Footer */
-
-.footer-contact-link {
-  display: inline-block;
+strong {
+  font-weight: 700;
 }
 
-.site-footer {
-  padding-top: 6em;
+ul, ol {
+  margin-top: 0
 }
 
-.footer-width {
-  background-color: #d7e0e8;
+ul li, ol li {
+  margin-bottom: .6em;
 }
 
-.all-footer-contact-links {
+
+/* -------- Images -------- */
+
+.page-end-logo {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 60px;
+  height: auto;
+  margin: 6em 0;
+}
+
+.transform-scale {
+  transition: all .5s;
+}
+
+.transform-scale:hover {
+  transform: scale(1.1);
+}
+
+.img-border {
+  border: 1px solid var(--dark-grey-color);
+}
+
+/* -------- Typography Flourish Colors -------- */
+
+
+.brand-color-h1::after,
+.jottful-color-h1::after,
+.webdesign-color-h1::after,
+.printdesign-color-h1::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -3px;
+  z-index: -1;
+}
+
+.brand-color-h1::after {
+  border-bottom: 0.3em solid var(--brand-color);
+}
+
+.jottful-color-h1::after {
+  border-bottom: 0.3em solid var(--jottfulblog-color);
+}
+
+.webdesign-color-h1::after {
+  border-bottom: 0.3em solid var(--webdesign-color);
+}
+
+.printdesign-color-h1::after {
+  border-bottom: 0.3em solid var(--printdesign-color);
+}
+
+
+.brand-color-h2::after,
+.jottful-color-h2::after,
+.webdesign-color-h2::after,
+.printdesign-color-h2::after  {
+  content: "";
+  position: relative;
+  display: block;
+  width: 50px;
+  top: .1em;
+}
+
+.brand-color-h2::after {
+  border-bottom: 4px solid var(--brand-color);
+}
+
+.jottful-color-h2::after {
+  border-bottom: 4px solid var(--jottfulblog-color);
+}
+
+.webdesign-color-h2::after {
+  border-bottom: 4px solid var(--webdesign-color);
+}
+
+.printdesign-color-h2::after {
+  border-bottom: 4px solid var(--printdesign-color);
+}
+
+
+/* -------- Home Page Only -------- */
+
+.home-cover {
+  margin: 10em 0;
+}
+
+.home-header-text {
+  text-align: left;
+  margin-bottom: .5em;
+}
+
+.home-header-text::after  {
+  content: "";
+  position: relative;
+  display: block;
+  width: .6em;
+  bottom: .8em;
+  right: .9em;
+  border-bottom: .6em solid var(--printdesign-color);
+}
+
+/* .home-box {
+  width: 2em;
+  height: 2em;
+  justify-self: start;
+}
+
+.home-box-end {
+  margin-bottom: 2em;
+} */
+
+
+.home-subheader-text {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-header-text {
+    font-size: 2em;
+  }
+  .home-subheader-text {
+    font-size: 1.3em;
+  }
+}
+
+.brand-background-color {
+  background-color: var(--brand-color);
+}
+
+.jottfulblog-background-color {
+  background-color: var(--jottfulblog-color);
+}
+
+.webdesign-background-color {
+  background-color: var(--webdesign-color);
+}
+
+.printdesign-background-color {
+  background-color: var(--printdesign-color);
+}
+
+.homepage-work-link {
+  margin: 1em 0;
+  padding: 3em 2em;
   text-align: center;
+  color: var(--text-color);
 }
 
-.bottom-icon {
-  max-height: 20px;
-  padding: 0 10px;
-}
-
-.footer-text {
-  font-size: .8em;
-}
-
-
-/* From 600px to 960 px ----------------------------------------------*/
-@media only screen and (min-width: 600px) {
-  .col-1 {width: 4.33%;}
-  .col-2 {width: 12.66%;}
-  .col-3 {width: 21%;}
-  .col-4 {width: 29.33%;}
-  .col-5 {width: 37.66%;}
-  .col-6 {width: 46%;}
-  .col-7 {width: 54.33%;}
-  .col-8 {width: 62.66%;}
-  .col-9 {width: 71%;}
-  .col-10 {width: 79.33%;}
-  .col-11 {width: 87.66%;}
-  .col-12 {width: 96%;}
-
-  .hidden-sm {display: block;}
-
-  .narrow-only{
-    display: none;
-  }
-  .wide-only{
-    display: block;
-  }
-
-  .wrapper {
-    margin-top: 6em;
-  }
-
-  .container {
-    width: 90%;
-  }
-
-  .row [class^="col"] {
-    margin: 0.5rem 2%;
-
-  }
-
-  .LHlogo {
-    height: 50px;
-    width: 203px;
-    float: left;
-    padding-top: 3px;
-  }
-
-  .all-nav-links {
-    font-size: 12pt;
-    width: 400px;
-    padding-left: 2px;
-    text-align: right;
-    float:right;
-  }
-
-  .hero-row {
-    margin: 2em 0 7em 0;
-  }
-
-  .hero-photo {
-    max-width: 15em;
-    width: auto;
-    float: right;
-  }
-
-  .hero-text-box-outer {
-    height: 23px;
-    position: relative;
-    background-image: none;
-  }
-
-  .hero-text-box-inner {
-    position: absolute;
-    top: 12em;
-    left: -1em;
-  }
-
-  .hero-background {
-    display: block;
-    position:absolute;
-    top: 7.4em;
-    width: 96%;
-    height: 15em;
-    left: 2%;
-    z-index: -1;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 1.5%;
-    bottom: 0;
-    left: 2%;
-    right: 0;
-    opacity: 0;
-    transition: .3s ease;
-  }
-
-  .row:hover .overlay {
-    opacity: 1;
-  }
-
-  .aboutMeLogoWrapper {
-    display: inline-block;
-    max-width: 7%;
-    margin-right: 2%;
-    vertical-align: top;
-  }
-
-  .aboutMeLogo {
-    width: 100%;
-    padding-top: 1.3em;
-  }
-
-  .aboutMeContent {
-    max-width: 90%;
-    display: inline-block;
-  }
-
-
-
-  #blockText {
-    width: 70%;
-    margin: 0 15% 0 15%;
-    text-align: left;
-  }
-
-  .all-footer-contact-links {
-    float:right;
-  }
-
-}
-
-/* Above 960 px ----------------------------------------------*/
-@media only screen and (min-width: 960px) {
-  .container {
-    width: 90%;
-    max-width: 960px;
-  }
-
-  .hero-row {
-    margin-bottom: 5em;
-  }
-
-  .hero-photo {
-    max-width: 18em;
-  }
-
+.homepage-work-link {
 
 }
