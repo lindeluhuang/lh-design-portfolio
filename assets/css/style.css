@@ -31,7 +31,7 @@ img {
 }
 
 #extralongtopmargin {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 
@@ -131,7 +131,7 @@ article {
 
 section {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 25px;
 }
 
