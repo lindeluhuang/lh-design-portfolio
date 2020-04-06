@@ -2,13 +2,14 @@
 
 :root {
   --brand-color:#4A82BB;
+  --brand-color-secondary: #FECB78;
   --text-color: #091017;
   --dark-grey-color: #B5BABF;
   --font-serif: 'Playfair Display', serif;
   --font-sans-serif: 'Overpass', sans-serif;
   --jottfulblog-color: #F09061;
   --webdesign-color: #A4BF87;
-  --printdesign-color: #FECB78;
+  --printdesign-color: #93C8D4;
 
 }
 
@@ -27,7 +28,7 @@ img {
 }
 
 #extralongtopmargin {
-  margin-top: 400px;
+  margin-top: 300px;
 }
 
 /* -------- Navigation & Footer -------- */
@@ -223,6 +224,10 @@ h1 {
   text-align: center;
 }
 
+.header-with-padding {
+  padding-top: 5rem;
+}
+
 h2 {
   font-size: 2.441em;
   margin: 2em 0 .5em 0;
@@ -287,7 +292,7 @@ ul li, ol li {
 }
 
 
-/* -------- Images -------- */
+/* -------- Images & Video -------- */
 
 .page-end-logo {
   grid-column: 1/-1;
@@ -302,11 +307,17 @@ ul li, ol li {
 }
 
 .transform-scale:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .img-border {
   border: 1px solid var(--dark-grey-color);
+}
+
+.video-full-width {
+  width: 100%;
+  height: 450px;
+  margin: 2em;
 }
 
 /* -------- Typography Flourish Colors -------- */
@@ -320,31 +331,31 @@ ul li, ol li {
   position: relative;
   display: block;
   width: 100%;
-  top: -3px;
   z-index: -1;
 }
 
 .brand-color-h1::after {
-  border-bottom: 0.3em solid var(--brand-color);
+  border-bottom: 0.25em solid var(--brand-color);
 }
 
 .jottful-color-h1::after {
-  border-bottom: 0.3em solid var(--jottfulblog-color);
+  border-bottom: 0.25em solid var(--jottfulblog-color);
 }
 
 .webdesign-color-h1::after {
-  border-bottom: 0.3em solid var(--webdesign-color);
+  border-bottom: 0.25em solid var(--webdesign-color);
 }
 
 .printdesign-color-h1::after {
-  border-bottom: 0.3em solid var(--printdesign-color);
+  border-bottom: 0.25em solid var(--printdesign-color);
 }
 
 
 .brand-color-h2::after,
 .jottful-color-h2::after,
 .webdesign-color-h2::after,
-.printdesign-color-h2::after  {
+.printdesign-color-h2::after,
+.brand-secondary-color-h2::after  {
   content: "";
   position: relative;
   display: block;
@@ -368,15 +379,19 @@ ul li, ol li {
   border-bottom: 4px solid var(--printdesign-color);
 }
 
+.brand-secondary-color-h2::after {
+  border-bottom: 4px solid var(--webdesign-color);
+}
+
 
 /* -------- Home Page Only -------- */
 
 .home-cover {
-  margin: 10em 0;
+  margin: 5rem 0;
 }
 
 .home-header-text {
-  text-align: left;
+  /* text-align: left; */
   margin-bottom: .5em;
 }
 
@@ -384,11 +399,21 @@ ul li, ol li {
   content: "";
   position: relative;
   display: block;
+
+  border-bottom: .23em solid var(--brand-color-secondary);
+  z-index: -1;
+}
+
+/* .home-header-text::after  {
+  content: "";
+  position: relative;
+  display: block;
   width: .6em;
   bottom: .8em;
   right: .9em;
   border-bottom: .6em solid var(--printdesign-color);
-}
+} */
+
 
 /* .home-box {
   width: 2em;
@@ -402,7 +427,7 @@ ul li, ol li {
 
 
 .home-subheader-text {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -416,6 +441,10 @@ ul li, ol li {
 
 .brand-background-color {
   background-color: var(--brand-color);
+}
+
+.brand-secondary-background-color {
+  background-color: var(--brand-color-secondary);
 }
 
 .jottfulblog-background-color {
@@ -432,7 +461,7 @@ ul li, ol li {
 
 .homepage-work-link {
   margin: 1em 0;
-  padding: 3em 2em;
+  /* padding: 3em 2em; */
   text-align: center;
   color: var(--text-color);
 }
