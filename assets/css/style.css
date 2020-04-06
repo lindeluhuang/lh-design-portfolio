@@ -2,11 +2,14 @@
 
 :root {
   --brand-color:#4A82BB;
-  --brand-color-secondary: #FECB78;
+  --brand-secondary-color: #FECB78;
+
   --text-color: #091017;
   --dark-grey-color: #B5BABF;
+
   --font-serif: 'Playfair Display', serif;
   --font-sans-serif: 'Overpass', sans-serif;
+
   --jottfulblog-color: #F09061;
   --webdesign-color: #A4BF87;
   --printdesign-color: #93C8D4;
@@ -236,11 +239,6 @@ h1 {
   }
 }
 
-.h1-below-image {
-  margin-top: 0.8em;
-  margin-bottom: .5em;
-}
-
 h2 {
   font-size: 2.441em;
   margin: 2em 0 .5em 0;
@@ -316,7 +314,7 @@ ul li, ol li {
 }
 
 .transform-scale {
-  transition: all .5s;
+  transition: all .8s;
 }
 
 .transform-scale:hover {
@@ -333,10 +331,11 @@ ul li, ol li {
   margin: 2em 0;
 }
 
-/* -------- Typography Flourish Colors -------- */
+/* -------- Typography Style Block Colors -------- */
 
 
 .brand-color-h1::after,
+.brand-secondary-color-h1::after,
 .jottful-color-h1::after,
 .webdesign-color-h1::after,
 .printdesign-color-h1::after {
@@ -350,6 +349,10 @@ ul li, ol li {
 
 .brand-color-h1::after {
   border-bottom: 0.25em solid var(--brand-color);
+}
+
+.brand-secondary-color-h1::after {
+  border-bottom: 0.25em solid var(--brand-secondary-color);
 }
 
 .jottful-color-h1::after {
@@ -366,10 +369,10 @@ ul li, ol li {
 
 
 .brand-color-h2::after,
+.brand-secondary-color-h2::after,
 .jottful-color-h2::after,
 .webdesign-color-h2::after,
-.printdesign-color-h2::after,
-.brand-secondary-color-h2::after  {
+.printdesign-color-h2::after  {
   content: "";
   position: relative;
   display: block;
@@ -379,6 +382,10 @@ ul li, ol li {
 
 .brand-color-h2::after {
   border-bottom: 4px solid var(--brand-color);
+}
+
+.brand-secondary-color-h2::after {
+  border-bottom: 4px solid var(--brand-secondary-color);
 }
 
 .jottful-color-h2::after {
@@ -393,29 +400,14 @@ ul li, ol li {
   border-bottom: 4px solid var(--printdesign-color);
 }
 
-.brand-secondary-color-h2::after {
-  border-bottom: 4px solid var(--webdesign-color);
-}
+
 
 
 /* -------- Home Page Only -------- */
 
-/* .home-cover {
-  margin: 5rem 0 0 0;
-} */
 
 .home-header-text {
-  /* text-align: left; */
   margin-bottom: .5em;
-}
-
-.home-header-text::after  {
-  content: "";
-  position: relative;
-  display: block;
-
-  border-bottom: .23em solid var(--brand-color-secondary);
-  z-index: -1;
 }
 
 .home-subheader-text {
@@ -425,13 +417,8 @@ ul li, ol li {
 @media only screen and (max-width: 600px) {
   .home-subheader-text {
     font-size: 1.3em;
+    line-height: 1.6em;
   }
-}
-
-.homepage-work-link {
-  margin: 1em 0;
-  text-align: center;
-  color: var(--text-color);
 }
 
 
