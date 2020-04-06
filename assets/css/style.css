@@ -225,9 +225,12 @@ h4, h5 {
 
 h1 {
   margin: 4em 0 0 0;
-  font-size: 3.052em;
+  /* font-size: 3.052em; */
+  font-size: 1em;
   line-height: 1.2em;
   text-align: center;
+  margin-top: 0;
+  transition: 1s;
 }
 
 @media only screen and (max-width: 600px) {

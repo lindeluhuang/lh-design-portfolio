@@ -1,1 +1,4 @@
-console.log('Hello there, you curious person you. Welcome to my site!');
+window.onload = function() {
+  document.getElementById("transitionIn").style.marginTop= "4em";
+  document.getElementById("transitionIn").style.fontSize="3.052em";
+};
