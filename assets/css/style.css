@@ -329,6 +329,12 @@ ul li, ol li {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
 }
 
+.image-grid-2col {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+}
+
 .image-grid-margins {
   margin: 1em 0 5em 0;
 }
