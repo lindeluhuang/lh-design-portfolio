@@ -40,12 +40,12 @@ img {
 #lindeHuangLogo {
   height: 40px;
   width: auto;
-  transform: translate(0, 5px);
+  transform: translate(0, 2px);
   padding-left: 1.5em;
 }
 
 .main-nav ul {
-	margin: 1em 0 .5em 0;
+	margin: .7em 0 .7em 0;
 	text-align: center;
   padding-left: 0;
 }
@@ -94,6 +94,14 @@ nav {
   width: auto;
 }
 
+.page-end-logo {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 50px;
+  height: auto;
+  margin: 6em 0;
+}
+
 footer {
   background-color: var(--dark-grey-color);
   margin-top: 1em;
@@ -103,7 +111,6 @@ footer {
 }
 
 footer ul, footer p {
-  /* margin: 0; */
   padding-left:0;
 }
 
@@ -230,6 +237,7 @@ h1 {
   font-size: 3.052em;
   line-height: 1.2em;
   text-align: center;
+  transition: all .8s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -303,14 +311,6 @@ ul li, ol li {
 
 
 /* -------- Images & Video -------- */
-
-.page-end-logo {
-  grid-column: 1/-1;
-  justify-self: center;
-  width: 60px;
-  height: auto;
-  margin: 6em 0;
-}
 
 .transform-scale {
   transition: all .8s;
