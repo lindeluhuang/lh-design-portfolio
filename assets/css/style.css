@@ -37,15 +37,22 @@ img {
 
 /* -------- Navigation & Footer -------- */
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
 #lindeHuangLogo {
   height: 40px;
   width: auto;
-  transform: translate(0, 2px);
+  transform: translate(0, -3px);
   padding-left: 1.5em;
 }
 
 .main-nav ul {
-	margin: .7em 0 .7em 0;
+	margin: .4em 0 .4em 0;
 	text-align: center;
   padding-left: 0;
 }
@@ -135,14 +142,6 @@ section {
   grid-column-gap: 25px;
 }
 
-/* @media only screen and (max-width: 600px) {
-  section {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    grid-column-gap: 25px;
-  }
-} */
-
 .full-width {
   grid-column: 1/-1
 }
@@ -150,12 +149,6 @@ section {
 .partial-width {
   grid-column: 3/11
 }
-
-/* @media only screen and (max-width: 600px) {
-  .partial-width {
-    grid-column: 2/6;
-  }
-} */
 
 .image-full-width {
   grid-column: 1/-1;
@@ -209,11 +202,8 @@ section {
 
   .image-quarter-width {
     grid-column-start: span 6;
+  }
 }
-}
-
-
-
 
 
 /* -------- Typography: Major Third scale -------- */
@@ -233,7 +223,7 @@ h4, h5 {
 }
 
 h1 {
-  margin: 2.5em 0 0 0;
+  margin: 4em 0 0 0;
   font-size: 3.052em;
   line-height: 1.2em;
   text-align: center;
@@ -330,6 +320,16 @@ ul li, ol li {
   margin: 2em 0;
 }
 
+.image-grid-3col {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+
+.image-grid-margins {
+  margin: 1em 0 5em 0;
+}
+
 /* -------- Typography Style Block Colors -------- */
 
 
@@ -403,7 +403,6 @@ ul li, ol li {
 
 
 /* -------- Home Page Only -------- */
-
 
 .home-header-text {
   margin-bottom: .5em;
