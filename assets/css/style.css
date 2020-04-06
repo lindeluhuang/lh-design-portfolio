@@ -31,6 +31,7 @@ img {
   margin-top: 300px;
 }
 
+
 /* -------- Navigation & Footer -------- */
 
 #lindeHuangLogo {
@@ -74,6 +75,12 @@ nav {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .main-nav li {
+    padding: .2em .8em;
+  }
+}
+
 .main-nav a {
   color: var(--brand-color);
 }
@@ -103,6 +110,7 @@ footer li {
   padding: 0 .5em;
 }
 
+
 /* -------- Content Grid -------- */
 
 article {
@@ -117,13 +125,13 @@ section {
   grid-column-gap: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   section {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-column-gap: 25px;
   }
-}
+} */
 
 .full-width {
   grid-column: 1/-1
@@ -133,11 +141,11 @@ section {
   grid-column: 3/11
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .partial-width {
     grid-column: 2/6;
   }
-}
+} */
 
 .image-full-width {
   grid-column: 1/-1;
@@ -153,21 +161,8 @@ section {
   margin: 2rem 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .image-partial-width {
-    grid-column: 1/-1;
-  }
-}
-
 .image-half-width {
   grid-column-start: span 6;
-  width: 100%;
-  height: auto;
-  margin: 2rem 0;
-}
-
-.image-third-width {
-  grid-column-start: span 4;
   width: 100%;
   height: auto;
   margin: 2rem 0;
@@ -180,14 +175,11 @@ section {
   margin: 2rem 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .image-half-width-centered {
-    grid-column: 1/-1;
-  }
-}
-
-.intro a {
-  grid-column-start: span 3;
+.image-third-width {
+  grid-column-start: span 4;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
 }
 
 .image-quarter-width {
@@ -197,9 +189,22 @@ section {
   margin: 2rem 0;
 }
 
-.no-margin-bottom {
-  margin-bottom: 0;
+@media only screen and (max-width: 600px) {
+  .image-partial-width,
+  .image-half-width,
+  .image-half-width-centered,
+  .image-third-width {
+    grid-column: 1/-1;
+  }
+
+  .image-quarter-width {
+    grid-column-start: span 6;
 }
+}
+
+
+
+
 
 /* -------- Typography: Major Third scale -------- */
 
@@ -218,14 +223,22 @@ h4, h5 {
 }
 
 h1 {
-  margin: .8em 0 0 0;
+  margin: 2.5em 0 0 0;
   font-size: 3.052em;
   line-height: 1.2em;
   text-align: center;
+  transition: all .8s;
 }
 
-.header-with-padding {
-  padding-top: 5rem;
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: 1em;
+  }
+}
+
+.h1-below-image {
+  margin-top: 0.8em;
+  margin-bottom: .5em;
 }
 
 h2 {
@@ -317,7 +330,7 @@ ul li, ol li {
 .video-full-width {
   width: 100%;
   height: 450px;
-  margin: 2em;
+  margin: 2em 0;
 }
 
 /* -------- Typography Flourish Colors -------- */
@@ -331,6 +344,7 @@ ul li, ol li {
   position: relative;
   display: block;
   width: 100%;
+  top: 2px;
   z-index: -1;
 }
 
@@ -386,9 +400,9 @@ ul li, ol li {
 
 /* -------- Home Page Only -------- */
 
-.home-cover {
-  margin: 5rem 0;
-}
+/* .home-cover {
+  margin: 5rem 0 0 0;
+} */
 
 .home-header-text {
   /* text-align: left; */
@@ -404,68 +418,31 @@ ul li, ol li {
   z-index: -1;
 }
 
-/* .home-header-text::after  {
-  content: "";
-  position: relative;
-  display: block;
-  width: .6em;
-  bottom: .8em;
-  right: .9em;
-  border-bottom: .6em solid var(--printdesign-color);
-} */
-
-
-/* .home-box {
-  width: 2em;
-  height: 2em;
-  justify-self: start;
-}
-
-.home-box-end {
-  margin-bottom: 2em;
-} */
-
-
 .home-subheader-text {
   font-size: 1.4em;
 }
 
 @media only screen and (max-width: 600px) {
-  .home-header-text {
-    font-size: 2em;
-  }
   .home-subheader-text {
     font-size: 1.3em;
   }
 }
 
-.brand-background-color {
-  background-color: var(--brand-color);
-}
-
-.brand-secondary-background-color {
-  background-color: var(--brand-color-secondary);
-}
-
-.jottfulblog-background-color {
-  background-color: var(--jottfulblog-color);
-}
-
-.webdesign-background-color {
-  background-color: var(--webdesign-color);
-}
-
-.printdesign-background-color {
-  background-color: var(--printdesign-color);
-}
-
 .homepage-work-link {
   margin: 1em 0;
-  /* padding: 3em 2em; */
   text-align: center;
   color: var(--text-color);
 }
 
-.homepage-work-link {
 
+
+
+/* -------- Overriding Spacing -------- */
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
 }
