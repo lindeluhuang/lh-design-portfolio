@@ -10,9 +10,10 @@
   --font-serif: 'Playfair Display', serif;
   --font-sans-serif: 'Overpass', sans-serif;
 
-  --jottfulblog-color: #F09061;
-  --webdesign-color: #A4BF87;
-  --printdesign-color: #93C8D4;
+  --servicedesign-color: #A4BF87;
+  --newproductdevelopment-color: #DB8DBC;
+  --uxdesign-color: #F09061;
+  --visualdesign-color: #76B8C7;
 
 }
 
@@ -262,8 +263,8 @@ h5 {
   font-size: 1.25em;
   font-weight: 700;
   text-align: center;
-  border-top: solid .08em var(--jottfulblog-color);
-  border-bottom: solid .08em var(--jottfulblog-color);
+  border-top: solid .08em var(--uxdesign-color);
+  border-bottom: solid .08em var(--uxdesign-color);
   margin: 1em 0 .6em 0;
 }
 
@@ -302,6 +303,17 @@ ul li, ol li {
   margin-bottom: .6em;
 }
 
+.centered {
+  text-align: center;
+}
+
+.grey {
+  color: grey;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 
 /* -------- Images & Video -------- */
 
@@ -344,9 +356,10 @@ ul li, ol li {
 
 .brand-color-h1::after,
 .brand-secondary-color-h1::after,
-.jottful-color-h1::after,
-.webdesign-color-h1::after,
-.printdesign-color-h1::after {
+.uxdesign-color-h1::after,
+.newproductdevelopment-color-h1::after,
+.servicedesign-color-h1::after,
+.visualdesign-color-h1::after {
   content: "";
   position: relative;
   display: block;
@@ -363,24 +376,29 @@ ul li, ol li {
   border-bottom: 0.25em solid var(--brand-secondary-color);
 }
 
-.jottful-color-h1::after {
-  border-bottom: 0.25em solid var(--jottfulblog-color);
+.uxdesign-color-h1::after {
+  border-bottom: 0.25em solid var(--uxdesign-color);
 }
 
-.webdesign-color-h1::after {
-  border-bottom: 0.25em solid var(--webdesign-color);
+.newproductdevelopment-color-h1::after {
+  border-bottom: 0.25em solid var(--newproductdevelopment-color);
 }
 
-.printdesign-color-h1::after {
-  border-bottom: 0.25em solid var(--printdesign-color);
+.servicedesign-color-h1::after {
+  border-bottom: 0.25em solid var(--servicedesign-color);
+}
+
+.visualdesign-color-h1::after {
+  border-bottom: 0.25em solid var(--visualdesign-color);
 }
 
 
 .brand-color-h2::after,
 .brand-secondary-color-h2::after,
-.jottful-color-h2::after,
-.webdesign-color-h2::after,
-.printdesign-color-h2::after  {
+.uxdesign-color-h2::after,
+.newproductdevelopment-color-h2::after,
+.servicedesign-color-h2::after,
+.visualdesign-color-h2::after  {
   content: "";
   position: relative;
   display: block;
@@ -396,16 +414,20 @@ ul li, ol li {
   border-bottom: 4px solid var(--brand-secondary-color);
 }
 
-.jottful-color-h2::after {
-  border-bottom: 4px solid var(--jottfulblog-color);
+.uxdesign-color-h2::after {
+  border-bottom: 4px solid var(--uxdesign-color);
 }
 
-.webdesign-color-h2::after {
-  border-bottom: 4px solid var(--webdesign-color);
+.newproductdevelopment-color-h2::after {
+  border-bottom: 4px solid var(--newproductdevelopment-color);
 }
 
-.printdesign-color-h2::after {
-  border-bottom: 4px solid var(--printdesign-color);
+.servicedesign-color-h2::after {
+  border-bottom: 4px solid var(--servicedesign-color);
+}
+
+.visualdesign-color-h2::after {
+  border-bottom: 4px solid var(--visualdesign-color);
 }
 
 
@@ -418,12 +440,12 @@ ul li, ol li {
 }
 
 .home-subheader-text {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 @media only screen and (max-width: 600px) {
   .home-subheader-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.6em;
   }
 }
