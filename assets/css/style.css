@@ -480,7 +480,9 @@ ul li, ol li {
 @media only screen and (max-width: 600px) {
   .home-paragraph-text {
     font-size: 1.2em;
-    line-height: 1.4em;
+    line-height: 1.5em;
+    text-align: left;
+    hyphens: none;
   }
 }
 
