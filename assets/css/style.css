@@ -317,17 +317,17 @@ ul li, ol li {
 
 /* -------- Images & Video -------- */
 
-a img {
-  display: block;
-}
-
 .transform-scale {
-  transition: all .8s;
+  transition: all .5s;
 }
 
 .transform-scale:hover {
   transform: scale(1.025);
   filter: drop-shadow(2px 2px 8px gray);
+}
+
+.hover-trim img {
+  display: block;
 }
 
 .hover-trim {
@@ -348,8 +348,8 @@ a img {
   right: 12px;
   bottom: 12px;
   opacity: 0;
-  -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
