@@ -31,9 +31,6 @@ img {
   width: 100%;
 }
 
-#extralongtopmargin {
-  margin-top: 200px;
-}
 
 
 /* -------- Navigation & Footer -------- */
@@ -315,6 +312,10 @@ ul li, ol li {
   text-transform: uppercase;
 }
 
+.text-color-override {
+  color: var(--text-color);
+}
+
 /* -------- Images & Video -------- */
 
 .transform-scale {
@@ -484,6 +485,18 @@ ul li, ol li {
     text-align: left;
     hyphens: none;
   }
+}
+
+
+
+
+
+
+/* -------- Blog Posts -------- */
+
+.blog-img {
+  margin-top: 3em;
+  margin-bottom: .5em;
 }
 
 
