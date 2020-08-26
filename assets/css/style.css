@@ -35,6 +35,8 @@ img {
 
 /* -------- Navigation & Footer -------- */
 
+
+
 .sticky {
   position: fixed;
   top: 0;
@@ -223,12 +225,11 @@ h4, h5 {
 
 h1 {
   margin: 4em 0 0 0;
-  /* font-size: 3.052em; */
   font-size: 1em;
   line-height: 1.2em;
   text-align: center;
-  margin-top: 0;
-  transition: 1s;
+  margin-top: 4em;
+  font-size: 3.052em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -327,16 +328,14 @@ ul li, ol li {
   filter: drop-shadow(2px 2px 8px gray);
 }
 
-.hover-trim img {
+/* .hover-trim img {
   display: block;
 }
 
 .hover-trim {
   display: inline-block;
-  /* vertical-align: middle; */
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
   position: relative;
 }
 
@@ -356,7 +355,7 @@ ul li, ol li {
 }
 .hover-trim:hover::before, .hover-trim:focus::before, .hover-trim:active::before {
   opacity: 1;
-}
+} */
 
 .img-border {
   border: 1px solid var(--dark-grey-color);

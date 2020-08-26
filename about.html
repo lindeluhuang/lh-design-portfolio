@@ -20,6 +20,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Overpass:300,700|Playfair+Display:800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- Scroll animations -->  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <!--
   -
   -
@@ -52,7 +57,7 @@
 
   <article>
     <section>
-      <h1 class="full-width brand-color-h1" id="transitionIn">
+      <h1 class="full-width brand-color-h1" data-aos="fade-down" data-aos-duration="1500">
         About
       </h1>
 
@@ -97,6 +102,10 @@
 
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="assets/js/script.js"></script>
 
 
