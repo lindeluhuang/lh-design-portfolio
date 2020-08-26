@@ -20,6 +20,10 @@
 
   <link href="https://fonts.googleapis.com/css?family=Overpass:300,700|Playfair+Display:800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- Scroll animations -->  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!--
   -
   -
@@ -51,7 +55,7 @@
 <body>
   <article>
     <section>
-      <h1 class="full-width newproductdevelopment-color-h1" id="transitionIn">
+      <h1 class="full-width newproductdevelopment-color-h1" data-aos="fade-down" data-aos-duration="1500">
         Community Engagement Network
       </h1>
       <img src="assets/images/casestudiesall/CaseStudyCommunityEngagementNetworkCover.png" alt="Community Engagement Case Study" class="image-full-width">
@@ -118,6 +122,10 @@
   </footer>
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="assets/js/script.js"></script>
 
 
