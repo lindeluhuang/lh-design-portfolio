@@ -493,7 +493,8 @@ ul li, ol li {
 /* -------- Coming Soon -------- */
 .coming-soon {
   background-color: #eaeaea;
-  margin-top: 3em;
+  margin-top: 5em;
+  margin-bottom: 3em;
   padding: 2em 20px;
 }
 
