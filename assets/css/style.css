@@ -474,17 +474,13 @@ ul li, ol li {
 }
 
 .home-paragraph-text {
-  font-size: 1.3em;
-    text-align: left;
-    /* hyphens: auto; */
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 600px) {
   .home-paragraph-text {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5em;
-    text-align: left;
-    hyphens: none;
   }
 }
 
