@@ -474,8 +474,8 @@ ul li, ol li {
 
 .home-paragraph-text {
   font-size: 1.3em;
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
+    /* hyphens: auto; */
 }
 
 @media only screen and (max-width: 600px) {
