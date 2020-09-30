@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164924416-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164924416-1');
+    </script>
+
+    <title>Linde Huang | Musings App</title>
+    <link rel="shortcut icon" href="assets/images/brand/LHOutline.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,700|Playfair+Display:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--
+  -
+  -
+  -  Hello there, you curious person you. It's Linde here. Welcome to my site!
+  -
+  -
+-->
+
+</head>
+<header>
+    <nav class="sticky">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="assets/images/brand/LHNameTitle.png" alt="Linde Huang Logo" id="lindeHuangLogo">
+            </a>
+        </div>
+        <div class="main-nav">
+            <ul>
+                <li><a href="index.html#work" class="nav-link">Work</a></li>
+                <li><a href="writing.html" class="nav-link">Writing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="https://www.linkedin.com/in/lindeluhuang" class="nav-link" target="_blank"><img
+                            src="assets/images/headerfooter/LinkedInLogo.png" class="icon-inline"></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<button onclick="topFunction()" id="goToTopBtn" title="Go to top"><img src="assets/images/headerfooter/GoToTopIcon.png"
+        alt="Scroll to top icon" class="top-button transform-scale"></button>
+
+
+<body>
+    <article>
+        <section>
+            <h1 class="full-width musings-color-h1" data-aos="fade-down" data-aos-duration="1500">
+                Musings
+            </h1>
+            <img src="assets/images/casestudiesall/CaseStudyMusingsCover.png" alt="Musings Case Study"
+                class="image-full-width">
+            <h2 class="partial-width musings-color-h2">
+                Problem
+            </h2>
+            <p class="partial-width">Sometimes when I’m in a particularly reflective mood, I have musings that
+                particularly strike me. I usually jot them down in my phone’s Notes app, but they’re mingled there with
+                other things like my grocery list or to do’s. I wanted to keep these special thoughts around and reflect
+                on from time to time, but when they were <strong>buried in my phone they got lost among the
+                    noise</strong>.
+            </p>
+            <p class="partial-width">I wanted an app I could use that wasn’t for daily to-do reminders, not for
+                accomplishing things. <strong>I wanted a simple journal of short musings and memories that wouldn’t slip
+                    away</strong>. Like Facebook’s On This Day feature that brings old posts to the forefront, I wanted
+                an app that could bring old thoughts back to me every so often.
+            </p>
+            <p class="partial-width">I searched and searched and couldn’t find that app. So I decided to make it myself.
+            </p>
+
+
+            <h2 class="partial-width musings-color-h2">
+                Market Landscape
+            </h2>
+            <p class="partial-width">I found five categories of products people generally use to record their thoughts.
+            </p>
+            <ul class="partial-width">
+                <li><strong>Notes apps (such as
+                        <a href="https://apps.apple.com/us/app/notes/id1110145109" target="_blank">Notes</a>,
+                        <a href="https://keep.google.com" target="_blank">Google Keep</a>,
+                        <a href="https://evernote.com/" target="_blank">EverNote</a>,
+                        <a href="https://www.onenote.com/" target="_blank">OneNote</a>)</strong>
+                    <br>These apps are geared toward keeping and organizing random notes. They’re the most similar to
+                    what I was creating, though these apps didn’t make it easy to look back on past notes.
+                </li>
+                <li><strong>Reminder apps (such as
+                        <a href="https://todoist.com/" target="_blank">ToDoist</a>,
+                        <a href="https://bzreminder.com/" target="_blank">BZ Reminder</a>,
+                        <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app" target="_blank">Microsoft To-Do</a>,
+                        <a href="https://www.calendarnotify.com/" target="_blank">Calendar Notify</a>)</strong>
+                    <br>These apps served more like to-do lists for task-based thoughts, which were not the types of
+                    thoughts I wanted to target. I wanted to target ponderings that weren’t necessarily actionable right
+                    away, but rather more interesting food-for-thought. </li>
+                <li><strong>Journaling apps (such as
+                        <a href="https://www.daygram.today/" target="_blank">Daygram</a>,
+                        <a href="https://dayoneapp.com/" target="_blank">Day One Journal</a>,
+                        <a href="https://momentoapp.com/" target="_blank">Momento</a>,
+                        <a href="https://daylio.net/" target="_blank">Daylio</a>)</strong>
+                    <br>These journaling apps incorporated all different types of media (like photos and videos) or
+                    metrics to track (such as mood or activity). They also often organized their structure around
+                    getting the user to write an entry every day. My idea is to get much simpler, focusing only on notes
+                    without any pressure to write at specific intervals. </li>
+
+                <li><strong>Word processing apps (such as
+                        <a href="https://docs.google.com" target="_blank">Google Docs</a>,
+                        <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank">Word</a>,
+                        <a href="https://www.libreoffice.org/" target="_blank">LibreOffice Writer</a>,
+                        <a href="https://www.apple.com/pages/" target="_blank">Pages</a>)</strong>
+                    <br>These apps are used for more focused writing, and were much longer and more formal than of the
+                    types of notes I was hoping to capture. </li>
+                <li><strong>Good ol’ fashioned pen and paper</strong>
+                    <br>Sticky notes around the house and long-form journals are a convenient, low-tech way to record
+                    thoughts. I myself enjoy the ritual of writing things by hand, and would hope this app could
+                    hopefully supplement rather than completely replace them.
+                </li>
+            </ul>
+
+            <h5 class="partial-width highlight-bar-musings">
+                Proposed Differentiators
+            </h5>
+            <p class="partial-width">Seeing the other options in the marketplace, I aimed to position my app to
+                differentiate by emphasizing:
+            </p>
+            <ul class="partial-width">
+                <li><strong>A focus on thoughts and musings.</strong>
+                    <br>Other apps try to be everything to everyone, creating clunky interfaces with features people
+                    don’t use. I want this app to focus on the more abstract thoughts people have, rather than
+                    task-based to-do’s.
+                </li>
+                <li><strong>Easy ways to look back old entries, without having to make the effort to search for them
+                        yourself.</strong>
+                    <br>Even though all these other apps store notes, most of them keep them filed away and it takes
+                    great effort to find old notes again. I wanted to keep the looking back portion of this app front
+                    and center. </li>
+                <li><strong>Simplicity and calmness.</strong>
+                    <br>I wanted to make the app a more reflective experience, rather than one focused on productivity.
+                    Instead of having a million options at your fingertips, I wanted the UI and experience to feel light
+                    and easy and clean. </li>
+
+            </ul>
+
+
+            <h2 class="partial-width musings-color-h2">
+                User Research
+            </h2>
+            <p class="partial-width">I did some informal user research among a dozen of my friends through a very
+                formal and sophisticated communication medium: text message.
+            </p>
+            <p class="partial-width">I asked them <strong>if and how they store any thoughts or musings that come to
+                    mind</strong>. A few of them didn’t do anything formal, but most told me they wrote things down in
+                various phone apps or emailed notes to themselves.
+            </p>
+            <p class="partial-width">For the people who said they did take note of their thoughts, told them about my
+                Notes + “On This Day” idea. I was surprised but please to see quite positive initial reactions.
+            </p>
+            <p class="partial-width quote-musings">
+                <em>Me:
+                    <br>“Do you ever like, take notes on your phone or in a notebook or something when you have a
+                    thought/musing?”
+                    <br>
+                    <br>Various friends:
+                    <br> “Yeah, all the time! Mostly use Google keep for phone thoughts and then journal for
+                    handwriting”
+                    <br> “Lol yes. I have a folder titled brain dump in my drive”
+                    <br> “Yes! Notes on phone but I often forget to follow up lol”
+                </em>
+                <br><br>
+                <em>Me:
+                    <br>“Okay so. I have this app idea and I’m wondering what people think. Basically it’s like, a cross
+                    between the notes app and the “on this day” Facebook feature. How it would work would be like, you
+                    write thoughts down in this app, and they’d be there as a list. But also, on some day in the future,
+                    whether on the same day in a year or some other time, it would remind you either by email or
+                    notification. Thoughts??”
+                    <br>
+                    <br>Various friends:
+                    <br>“OOOH I LOVE. Yes. I love it.”
+                    <br>“I would love and use that!!”
+                    <br>“I need this app. I have so many dang notes that sometimes I spend my weekend going through them
+                    for refreshers, but I love the idea of automating that.”
+                </em></p>
+            <p class="partial-width">I then probed a bit into their current habits and compiled a list of initial
+                observations.</p>
+            <h5 class="partial-width highlight-bar-musings">
+                Initial User Insights
+            </h5>
+            <ul class="partial-width">
+                <li><strong>People do take notes on their phone about thoughts and musings.</strong>
+                    <br>Many women do tend to have thoughts they write down in their phone, ranging from to-do list
+                    items to observations about the world and themselves.
+                </li>
+                <li><strong>People take notes on their phone because it’s always there. </strong>
+                    <br>Since a phone is always handy nowadays, it is easy to reach for at a moment’s notice.
+                </li>
+                <li><strong>Different people use different note apps.</strong>
+                    <br>There was no clear consensus on a single app or system that everyone used.
+                </li>
+                <li><strong>But, each person typically only likes using a single app per device.</strong>
+                    <br>People find it too cumbersome to switch between apps and keep things in different places on
+                    their phone.
+                </li>
+                <li><strong>People picked which app to use based off convenience or recommendation.</strong>
+                    <br>Many people used their phone app because it was there and they didn’t have to do the work of
+                    looking for something else. Most people only turned to other apps when someone else recommended it
+                    to them.
+                </li>
+                <li><strong>Notes take a variety of lengths and forms.</strong>
+                    <br>Some notes like single quotes were just one sentence, while other notes like meeting notes could
+                    span multiple viewport screens with bullet points and advanced formatting.
+                </li>
+            </ul></strong>
+
+
+            <h2 class="partial-width musings-color-h2">
+                Version 1
+            </h2>
+            <h3 class="partial-width">
+                Sketching
+            </h3>
+
+            <p class="partial-width">
+                I also started jotting down different phrases to “sell” the app, less for actual usage and more for
+                helping me think more intentionally about the core of my idea and hone in on the problems I was really
+                trying to solve for.
+            </p>
+            <img src="assets/images/musingscasestudy/Version1Sketches.png" alt="Version 1 Sketches"
+                class="image-full-width">
+
+            <p class="partial-width">My main app features included:
+            </p>
+            <ul class="partial-width"><strong>
+                    <li>Creating an account</li>
+                    <li>Writing and editing entries</li>
+                    <li>Seeing the full list of all entries, with long previews</li>
+                    <li>Getting email reminders with full entry excerpts </li>
+                    <li>Tagging entries</li>
+                    <li>Searching through entries by keyword or tag</li>
+                    <li>All of it in a clean, simple, minimal interface</li>
+            </ul></strong>
+
+
+
+            <h3 class="partial-width">
+                Mockups
+            </h3>
+            <p class="partial-width">
+                I took these sketches and choose the minimum number of screens it would take to convey my idea to
+                people.
+            </p>
+
+            <p class="partial-width">
+                A large part of my app’s value proposition was to provide more simplicity and calm with my design, so it
+                was important for me to test high-fidelity versions right away (as opposed to creating mockups with a
+                more
+                in-between fidelity like wireframes).
+            </p>
+            <img src="assets/images/musingscasestudy/Version1Mockups.png" alt="Version 1 Mockups"
+                class="image-full-width">
+
+            <h3 class="partial-width">
+                User Testing
+            </h3>
+            <p class="partial-width">
+                I conducted 30-minute feedback sessions with a few friends to further refine my idea.
+            </p>
+            <p class="partial-width">
+                I began by asking them broad questions that probed into their <strong>note-taking habits</strong> (“Walk
+                me through your
+                current system for jotting down thoughts”). I then got into <strong>how they look back on
+                    notes</strong>, what keeps
+                them from looking back more often, and what they do after they do look back. Finally, I showed them my
+                six app screens, offering them as <strong>probes to elicit more specific feedback</strong>.
+            </p>
+
+            <h5 class="partial-width highlight-bar-musings">
+                Version 1 Feedback: User Insights
+            </h5>
+            <ul class="partial-width">
+                <li><strong>Writing notes is often done in a hurry. </strong>
+                    <br><em>"Either i'm about to meet someone, or I'm rushed, I only have a minute to write it
+                        down"</em></li>
+                <li><strong>People liked the idea of seeing past entries in theory, but in practice they may not take
+                        the time. </strong>
+                    <br><em>“I do intend to go back to the notes or read them, but I never do. I don’t make time for it
+                        I guess” </em></li>
+                <li><strong>People don’t tend to read emails that aren’t urgent to-dos.</strong>
+                    <br><em>“I’m used to ignoring things that don't need a response”</em></li>
+                <li><strong>People often find themselves editing the same note over and over again, adding onto it to
+                        keep the content top-of-mind.</strong>
+                    <br><em>“Sometimes I’ll make a random edit so the note goes to top of list so I can see again."</em>
+                </li>
+                <li><strong>People keep their notes in their preferred app forever, not moving things to a separate
+                        place for
+                        long-term storage.</strong>
+                    <br><em>“Oh, put them somewhere else long-term? That’s new to me.”</em></li>
+            </ul></strong>
+
+            <h2 class="partial-width musings-color-h2">
+                Version 2
+            </h2>
+            <h3 class="partial-width">
+                Refinements from v1
+            </h3>
+            <p class="partial-width">
+                Based off the user feedback from sharing version 1, I adjusted my initial designs. Of the many tweaks I
+                made, a few of my key changes are outlined below.
+            </p>
+            <ul class="partial-width">
+                <li><strong>Switching my perspective on reminders. </strong>
+                    <br>When I showed editing an app with a reminder date, people got hung up on deciding when they
+                    think they’d want to see it again. This distracted from the main idea of reflecting on the past, not
+                    planning the future. I switched the lens on my reminder feature, emphasizing the “look back”
+                    component.
+                </li>
+                <li><strong>Adding favorites.</strong>
+                    <br>People tended to go back to the same note over and over again, to add on as well as to review. I
+                    realized I needed a way to keep certain notes at-the-ready. I chose Favorites over a pinning system
+                    because the idea of favoriting something added an emotional attachment I felt was in-line with the
+                    app goals. </li>
+                <li><strong>Creating a “Lookback” view in the app.</strong>
+                    <br>While I may obsessively read my emails, I realized pretty much nobody else did the same. I
+                    realized I needed a way for people to look back from within the app, so I created a whole “Lookback”
+                    view.</li>
+                <li><strong>Setting the Lookback cadence to monthly.</strong>
+                    <br>People are often rushed for time, and reading past notes seemed to be more of a relaxation or
+                    reflection activity rather than a productive one. I decided on a monthly cadence since it seemed
+                    like long enough for people to not get completely sick of reminders, but also short enough that the
+                    lookbacks would stay engaging and interesting.
+                </li>
+                <li><strong>Adding note highlights.</strong>
+                    <br>People wanted a way to pull out the most interesting or impactful part of their notes,
+                    especially for the ones that got long. They wanted to make sure these sections were the ones that
+                    appeared on preview, as opposed to always showing the beginning of the note. I played with multiple
+                    formatting options but ultimately landed on highlights, to maintain the clean, minimal look that
+                    characterizes the app. </li>
+            </ul>
+
+            <h3 class="partial-width">
+                Clickable Prototype
+            </h3>
+            <p class="partial-width">
+                Armed with a greater degree of confidence around the core feature set of what people would want from
+                this app, I mocked up more parts of the app screens and turned it into a clickable prototype in
+                Figma.
+            </p>
+            <img src="assets/images/musingscasestudy/Version2PrototypeMap.png" alt="Version 2 Prototype Map"
+                class="image-full-width">
+            <p class="partial-width">
+                Try out the full clickable prototype below, or by <a
+                    href="https://www.figma.com/proto/uemHCjG33OA4CujATPLN5s/Musings-Designs?node-id=1%3A4936&scaling=scale-down"
+                    target="_blank">clicking here.</a>
+            </p>
+            <div class="full-width centered">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="618" height="550"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuemHCjG33OA4CujATPLN5s%2FMusings-Designs%3Fnode-id%3D1%253A4936%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                    allowfullscreen></iframe>
+                <br><br>
+            </div>
+
+
+            <h3 class="partial-width">
+                User Testing
+            </h3>
+            <p class="partial-width">
+                This is where I'm currently at. Stay tuned for updates!
+            </p>
+
+
+
+            <p class="partial-width centered">
+                <br><br><a href="index.html#personalProjects">Return to Work</a>
+            </p>
+            <img src="assets/images/brand/LHOutline.png" alt="Linde Huang minimal logo" class="page-end-logo">
+
+        </section>
+    </article>
+
+
+    <footer>
+        <p>© 2020 COPYRIGHT <br>Designed & Developed by Linde Huang</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/lindeluhuang" target="_blank"><img class="icon-inline"
+                        src="assets/images/headerfooter/LinkedInLogo.png"></a></li>
+            <li><a href="mailto:linde.lu.huang@gmail.com" target="_blank"><img class="icon-inline"
+                        src="assets/images/headerfooter/MailLogo.png"></a></li>
+        </ul>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="assets/js/script.js"></script>
+
+
+</html>

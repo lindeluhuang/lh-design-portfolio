@@ -15,6 +15,7 @@
   --newproductdevelopment-color: #DB8DBC;
   --uxdesign-color: #F09061;
   --visualdesign-color: #76B8C7;
+  --musings-color: #7D8DB7;
 
 }
 
@@ -30,6 +31,10 @@ body {
 
 img {
   width: 100%;
+}
+
+a {
+  color: var(--brand-color);
 }
 
 
@@ -268,6 +273,21 @@ h5 {
   margin: 1em 0 .6em 0;
 }
 
+.quote-musings {
+  border-left: solid .08em var(--musings-color);
+  padding: 1em 2em;
+  margin: 2em 0 3em 0;
+}
+
+.highlight-bar-musings {
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  border-top: solid .08em var(--musings-color);
+  border-bottom: solid .08em var(--musings-color);
+  margin: 1em 0 .6em 0;
+}
+
 
 body {
   font-family: var(--font-sans-serif);
@@ -280,7 +300,7 @@ p {
 
 p a {
   font-weight: 700;
-  color: var(--brand-color)
+  color: var(--brand-color);
 }
 
 p a:hover {
@@ -392,6 +412,7 @@ ul li, ol li {
 .brand-secondary-color-h1::after,
 .uxdesign-color-h1::after,
 .newproductdevelopment-color-h1::after,
+.musings-color-h1::after,
 .servicedesign-color-h1::after,
 .visualdesign-color-h1::after {
   content: "";
@@ -418,6 +439,10 @@ ul li, ol li {
   border-bottom: 0.25em solid var(--newproductdevelopment-color);
 }
 
+.musings-color-h1::after {
+  border-bottom: 0.25em solid var(--musings-color);
+}
+
 .servicedesign-color-h1::after {
   border-bottom: 0.25em solid var(--servicedesign-color);
 }
@@ -431,6 +456,7 @@ ul li, ol li {
 .brand-secondary-color-h2::after,
 .uxdesign-color-h2::after,
 .newproductdevelopment-color-h2::after,
+.musings-color-h2::after,
 .servicedesign-color-h2::after,
 .visualdesign-color-h2::after  {
   content: "";
@@ -454,6 +480,10 @@ ul li, ol li {
 
 .newproductdevelopment-color-h2::after {
   border-bottom: 4px solid var(--newproductdevelopment-color);
+}
+
+.musings-color-h2::after {
+  border-bottom: 4px solid var(--musings-color);
 }
 
 .servicedesign-color-h2::after {
@@ -533,8 +563,8 @@ ul li, ol li {
 #goToTopBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 30px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 5vh; /* Place the button at the bottom of the page */
+  right: 5vw; /* Place the button from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
