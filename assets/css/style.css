@@ -151,12 +151,21 @@ section {
 }
 
 .full-width {
-  grid-column: 1/-1
+  grid-column: 1/-1;
 }
 
 .partial-width {
-  grid-column: 3/11
+  grid-column: 3/11;
 }
+
+@media only screen and (max-width: 600px) {
+.partial-width {
+  grid-column: 2/12;
+  /* grid-column: 1/-1; */
+}
+}
+
+
 
 .image-full-width {
   grid-column: 1/-1;
@@ -206,6 +215,7 @@ section {
   .image-half-width-centered,
   .image-third-width {
     grid-column: 1/-1;
+
   }
 
   .image-quarter-width {
