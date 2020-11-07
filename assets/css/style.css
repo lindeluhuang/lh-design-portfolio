@@ -16,6 +16,7 @@
   --uxdesign-color: #F09061;
   --visualdesign-color: #76B8C7;
   --musings-color: #7D8DB7;
+  --wishingwall-color: #A96367;
 
 }
 
@@ -423,6 +424,7 @@ ul li, ol li {
 .uxdesign-color-h1::after,
 .newproductdevelopment-color-h1::after,
 .musings-color-h1::after,
+.wishingwall-color-h1::after,
 .servicedesign-color-h1::after,
 .visualdesign-color-h1::after {
   content: "";
@@ -453,6 +455,14 @@ ul li, ol li {
   border-bottom: 0.25em solid var(--musings-color);
 }
 
+.wishingwall-color-h1::after {
+  border-bottom: 0.25em solid var(--wishingwall-color);
+}
+
+.visualdesign-color-h1::after {
+  border-bottom: 0.25em solid var(--wishingwall-color);
+}
+
 .servicedesign-color-h1::after {
   border-bottom: 0.25em solid var(--servicedesign-color);
 }
@@ -462,11 +472,14 @@ ul li, ol li {
 }
 
 
+
+
 .brand-color-h2::after,
 .brand-secondary-color-h2::after,
 .uxdesign-color-h2::after,
 .newproductdevelopment-color-h2::after,
 .musings-color-h2::after,
+.wishingwall-color-h2::after,
 .servicedesign-color-h2::after,
 .visualdesign-color-h2::after  {
   content: "";
@@ -495,6 +508,11 @@ ul li, ol li {
 .musings-color-h2::after {
   border-bottom: 4px solid var(--musings-color);
 }
+
+.wishingwall-color-h2::after {
+  border-bottom: 4px solid var(--wishingwall-color);
+}
+
 
 .servicedesign-color-h2::after {
   border-bottom: 4px solid var(--servicedesign-color);
