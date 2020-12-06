@@ -12,7 +12,7 @@
   --font-sans-serif: 'Overpass', sans-serif;
 
 
-  --absnetwork-color: #A4BF87;
+  --absnetwork-color: #5E5A9D;
   --jottfulblog-color: #F09061;
   --diversityinresearch-color: #B488B0;
   --musings-color: #7D8DB7;
@@ -423,6 +423,7 @@ ul li, ol li {
 .brand-color-h1::after,
 .brand-secondary-color-h1::after,
 .jottfulblog-color-h1::after,
+.absnetwork-color-h1::after,
 .diversityinresearch-color-h1::after,
 .musings-color-h1::after,
 .wishingwall-color-h1::after {
@@ -446,6 +447,9 @@ ul li, ol li {
   border-bottom: 0.25em solid var(--jottfulblog-color);
 }
 
+.absnetwork-color-h1::after {
+  border-bottom: 0.25em solid var(--absnetwork-color);
+}
 
 .diversityinresearch-color-h1::after {
   border-bottom: 0.25em solid var(--diversityinresearch-color);
@@ -465,6 +469,7 @@ ul li, ol li {
 .brand-color-h2::after,
 .brand-secondary-color-h2::after,
 .jottfulblog-color-h2::after,
+.absnetwork-color-h2::after,
 .diversityinresearch-color-h2::after,
 .musings-color-h2::after,
 .wishingwall-color-h2::after {
@@ -485,6 +490,10 @@ ul li, ol li {
 
 .jottfulblog-color-h2::after {
   border-bottom: 4px solid var(--jottfulblog-color);
+}
+
+.absnetwork-color-h2::after {
+  border-bottom: 4px solid var(--absnetwork-color);
 }
 
 .diversityinresearch-color-h2::after {
