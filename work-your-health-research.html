@@ -53,73 +53,91 @@
     </nav>
 </header>
 
-<button onclick="topFunction()" id="goToTopBtn" title="Go to top"><img src="assets/images/headerfooter/GoToTopIcon.png" alt="Scroll to top icon" class="top-button transform-scale"></button>
-
-
 <body>
-    <article>
-        <section>
+    <div class="container-grid">
+        <section id="top" data-color="inprogress-color">
             <h1 class="full-width inprogress-color-h1" data-aos="fade-down" data-aos-duration="1500">
                 Your Health Research
             </h1>
-            <img src="assets/images/casestudiesall/CaseStudyYourHealthResearch.png" alt="Your Health Research Case Study"
-                class="image-full-width">
-            <h2 class="partial-width inprogress-color-h2">
-                Problem
-            </h2>
-            <p class="partial-width">
-                In order for a new medicine or procedure to be adopted in a clinical setting, it needs to pass rigorous
-                scrutiny through research studies that investigate the treatment’s effectiveness and safety. However,
-                these clinical trials are often difficult to complete because <strong>volunteers need to spend their
-                    time and effort in order to participate</strong>.
-            </p>
-            <p class="partial-width">
-                There are many studies that never finish because not enough volunteers were found. As a result,
-                <strong>many promising healthcare solutions never find their way to patients</strong>.
-            </p>
+            <img src="assets/images/casestudiesall/CaseStudyYourHealthResearch.png"
+                alt="Your Health Research Case Study" class="image-full-width">
+        </section>
 
-            <h2 class="partial-width inprogress-color-h2">
-                Proposal
-            </h2>
-            <p class="partial-width">
-                The Your Health Research website is a platform where study teams can connect with people in the
-                community who are interested in giving back to healthcare through participating in research studies. It
-                began focused on the University of Michigan, where it now has over 50,000 research volunteers.
-            </p>
-            <p class="partial-width">
-                As the platform expands to other parts of the country like Chicago and Miami, we are currently assessing
-                the needs and priorities for the next phase of the product.
-            </p>
+        <nav class="toc"></nav>
 
-            <h2 class="partial-width inprogress-color-h2">
-                Partners
-            </h2>
-            <p class="partial-width">
-                We're working on this project in partnership with the Michigan Institute of Clinical & Health Research
-                (MICHR) Participant Recruitment and Informatics teams.
-            </p>
-
-            <div class="partial-width coming-soon">
-                <h4 class="partial-width centered no-margin-top">- Full case study coming soon -</h4>
-                <p class="partial-width centered no-margin-bottom">
-                    Curious about what we've been learning so far? Send me an &nbsp;<a
-                        href="mailto:linde.lu.huang@gmail.com" target="_blank"><img class="icon-inline"
-                            src="assets/images/headerfooter/MailLogo.png"></a> <a href="mailto:linde.lu.huang@gmail.com"
-                        target="_blank">email</a>
+        <article class="main-content">
+            <section class="content-start" id="problem">
+                <h2 class="partial-width inprogress-color-h2">
+                    Problem
+                </h2>
+                <p class="partial-width">
+                    In order for a new medicine or procedure to be adopted in a clinical setting, it needs to pass
+                    rigorous
+                    scrutiny through research studies that investigate the treatment’s effectiveness and safety.
+                    However,
+                    these clinical trials are often difficult to complete because <strong>volunteers need to spend their
+                        time and effort in order to participate</strong>.
                 </p>
-            </div>
+                <p class="partial-width">
+                    There are many studies that never finish because not enough volunteers were found. As a result,
+                    <strong>many promising healthcare solutions never find their way to patients</strong>.
+                </p>
+            </section>
+
+            <section id="proposal">
+                <h2 class="partial-width inprogress-color-h2">
+                    Proposal
+                </h2>
+                <p class="partial-width">
+                    The Your Health Research website is a platform where study teams can connect with people in the
+                    community who are interested in giving back to healthcare through participating in research studies.
+                    It
+                    began focused on the University of Michigan, where it now has over 50,000 research volunteers.
+                </p>
+                <p class="partial-width">
+                    As the platform expands to other parts of the country like Chicago and Miami, we are currently
+                    assessing
+                    the needs and priorities for the next phase of the product.
+                </p>
+            </section>
+
+            <section id="partners">
+                <h2 class="partial-width inprogress-color-h2">
+                    Partners
+                </h2>
+                <p class="partial-width">
+                    We're working on this project in partnership with the Michigan Institute of Clinical & Health
+                    Research
+                    (MICHR) Participant Recruitment and Informatics teams.
+                </p>
+
+                <div class="partial-width coming-soon">
+                    <h4 class="partial-width centered no-margin-top">- Full case study coming soon -</h4>
+                    <p class="partial-width centered no-margin-bottom">
+                        Curious about what we've been learning so far? Send me an &nbsp;<a
+                            href="mailto:linde.lu.huang@gmail.com" target="_blank"><img class="icon-inline"
+                                src="assets/images/headerfooter/MailLogo.png"></a> <a
+                            href="mailto:linde.lu.huang@gmail.com" target="_blank">email</a>
+                    </p>
+                </div> 
+            </section>
+
+
 
 
             <p class="partial-width centered">
                 <br><br><a href="index.html#currentProjects">Return to Work</a>
+                <br>
+                <img src="assets/images/brand/LHOutline.png" alt="Linde Huang minimal logo" class="page-end-logo">
             </p>
-            <img src="assets/images/brand/LHOutline.png" alt="Linde Huang minimal logo" class="page-end-logo">
-
-        </section>
-    </article>
 
 
-    <footer>
+
+        </article>
+
+    </div>
+
+    <footer class="work-footer">
         <p>© 2020 COPYRIGHT <br>Designed & Developed by Linde Huang</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/lindeluhuang" target="_blank"><img class="icon-inline"
@@ -134,7 +152,7 @@
 <script>
     AOS.init();
 </script>
-<script src="assets/js/go-to-top-btn.js"></script>
+<script src="assets/js/toc.js"></script>
 
 
 </html>
