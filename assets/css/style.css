@@ -738,15 +738,15 @@ ul li, ol li {
   }
 
   .toc-h2-condensed {
-    font-size: 0.85em;
-    padding-top: 1.3em;
+    font-size: 0.8em;
+    padding-top: 1em;
     line-height: 1.4;
   }
 
   .toc-h3-condensed {
     font-size: 0.7em;
     padding-left: 1em;
-    padding-top: 0.5em;
+    padding-top: 0.4em;
     line-height: 1.3;
   }
 
