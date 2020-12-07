@@ -671,36 +671,30 @@ ul li, ol li {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 240px;
     height: 100vh;
     background-color: white;
     transition: background-color 0.5s;
-    padding: 100px 20px 20px 20px;
+    padding: 100px 0 20px 0;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
     border-right: 1px solid var(--light-grey-color);
+    overflow: hidden;
   }
   
   nav.toc.visible a {
     color: var(--text-color);
     text-decoration: none;
-    margin: 8px 20px;
+    margin: 8px 40px;
     line-height: 1.2;
-    
+
   }
 
   article section {
     padding-top: 60px; margin-top: -60px;
   }
-
-  nav.toc.visible a.anchor {
-    /* display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden; */
-}
   
   .toc-title {
     font-size: 1.4em;
