@@ -690,6 +690,17 @@ ul li, ol li {
     line-height: 1.2;
     
   }
+
+  article section {
+    padding-top: 60px; margin-top: -60px;
+  }
+
+  nav.toc.visible a.anchor {
+    /* display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden; */
+}
   
   .toc-title {
     font-size: 1.4em;
@@ -698,11 +709,11 @@ ul li, ol li {
   }
   
   .toc-h2 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   
   .toc-h3 {
-    font-size: 1em;
+    font-size: 0.8em;
     padding-left: 1em;
   }
 
