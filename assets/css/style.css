@@ -643,7 +643,30 @@ ul li, ol li {
 }
 
 /* -------- Table of Contents for Work Pages -------- */
+
+@media only screen and (max-width: 841px) {
+  nav.toc {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 840px) {
+  .main-content.toc-visible {
+    /* margin-left: 200px;
+    transition: margin-left 0.5s ease; */
+    /* transform: translateX(100px);  
+    transition: transform 0.5s ease;  */
+    margin-left: 100px;
+    margin-right: -100px;
+    transition: margin 0.5s ease;
+  }
+
+  .main-content.toc-hidden {
+    margin-left: 0;
+    margin-right: 0;
+    transition: margin 0.5s ease;
+  }
+  
   nav.toc.visible {
     position: fixed;
     top: 0;
@@ -683,10 +706,7 @@ ul li, ol li {
     padding-left: 1em;
   }
   
-  .main-content.toc-visible {
-    margin-left: 200px;
-    transition: margin-left 0.5s ease;
-  }
+
 
   .work-footer {
     margin-left: 200px;

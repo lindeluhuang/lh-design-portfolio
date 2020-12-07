@@ -32,16 +32,19 @@ if (window.screen.width > 840) {
     // listen for scroll
     document.addEventListener("scroll", function () {
         const pixelsScrolled = window.pageYOffset;
+        console.log(sectionFirst.offsetTop)
 
         // show TOC after scrolling past initial cover content
         if (pixelsScrolled >= sectionFirst.offsetTop - 250) {
             tocTag.classList.add("visible");
             tocTag.innerHTML = tocContent;
             mainContentTag.classList.add("toc-visible");
+            mainContentTag.classList.remove("toc-hidden");
         } else {
             tocTag.classList.remove("visible")
             tocTag.innerHTML = "";
             mainContentTag.classList.remove("toc-visible");
+            mainContentTag.classList.add("toc-hidden");
         }
 
         // for each section, bold if looking at it
