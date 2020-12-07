@@ -687,7 +687,8 @@ ul li, ol li {
   nav.toc.visible a {
     color: var(--text-color);
     text-decoration: none;
-    margin: 8px 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   article section {
@@ -695,20 +696,21 @@ ul li, ol li {
   }
   
   .toc-title {
-    font-size: 1.4em;
-    padding-bottom: 0.3em;
+    font-size: 1.3em;
     font-family: var(--font-serif);
     line-height: 1.2;
   }
   
   .toc-h2 {
     font-size: 1em;
+    padding-top: 1.5em;
     line-height: 1.3;
   }
   
   .toc-h3 {
     font-size: 0.8em;
     padding-left: 1em;
+    padding-top: 0.8em;
     line-height: 1.4;
   }
 

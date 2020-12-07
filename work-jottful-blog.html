@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+
   <header>
     <nav class="sticky">
       <div class="nav-logo">
@@ -54,38 +54,44 @@
     </nav>
   </header>
 
-  <button onclick="topFunction()" id="goToTopBtn" title="Go to top"><img src="assets/images/headerfooter/GoToTopIcon.png" alt="Scroll to top icon" class="top-button transform-scale"></button>
-
-  <article>
-    <section>
+  <body>
+    <div class="container-grid">
+      <section id="top" data-color="jottfulblog-color">
       <h1 class="full-width jottfulblog-color-h1" data-aos="fade-down" data-aos-duration="1500">
         Jottful Blogging Platform
       </h1>
       <img src="assets/images/jottfulblogcasestudy/CaseStudyJottfulBlogCover.png" alt="Jottful Blog Case Study" class="image-full-width">
-      <h3 class="partial-width">
+      
+    </section>
+
+    <nav class="toc"></nav>
+
+    <article class="main-content">
+        <section class="content-start" id="projectContext">
+      <h2 class="partial-width jottfulblog-color-h2">
         Project Context
-      </h3>
+      </h2>
       <p class="partial-width">
         Before I worked at Michigan Medicine, I worked at Jottful. Jottful is a startup that <strong>builds and maintains websites for small businesses</strong>. Its key product differentiator is a website editing software that's extremely easy for customer's to use, whether they consider themselves tech-savvy or not.
       </p>
+    </section>
+
+    <section id="problem">
       <h3 class="partial-width">
-        Problem
+        Problem Statement
       </h3 class="partial-width">
       <p class="partial-width">
         How do you introduce blogging functionality while maintaining a <strong>low barrier to entry for less tech-savvy customers</strong>?
       </p>
-      <a href="#research" class="image-quarter-width no-margin-top"><img src="assets/images/jottfulblogcasestudy/Phase1.png" alt="Jottful Blog Phase 1 Link" class="image-quarter-width transform-scale no-margin-bottom no-margin-top"></a>
-      <a href="#iterate" class="image-quarter-width no-margin-top"><img src="assets/images/jottfulblogcasestudy/Phase2.png" alt="Jottful Blog Phase 2 Link" class="image-quarter-width transform-scale no-margin-bottom no-margin-top"></a>
-      <a href="#validate" class="image-quarter-width no-margin-top"><img src="assets/images/jottfulblogcasestudy/Phase3.png" alt="Jottful Blog Phase 3 Link" class="image-quarter-width transform-scale no-margin-bottom no-margin-top"></a>
-      <a href="#finalize" class="image-quarter-width no-margin-top"><img src="assets/images/jottfulblogcasestudy/Phase4.png" alt="Jottful Blog Phase 4 Link" class="image-quarter-width transform-scale no-margin-top"></a>
-
     </section>
 
-    <section class="content">
-      <h2 class="partial-width jottfulblog-color-h2" id="research">
+    <section class="phase1Research">
+      <h2 class="partial-width jottfulblog-color-h2">
         Phase 1: Research
       </h2>
+    </section>
 
+    <section id="competitiveLandscape">
       <h3 class="partial-width">
         Competitive Landscape
       </h3>
@@ -99,7 +105,9 @@
           <img src="assets/images/jottfulblogcasestudy/SquarespaceEvaluation.png" alt="Jottful Blog Squarespace Evaluation">
           <img src="assets/images/jottfulblogcasestudy/WixEvaluation.png" alt="Jottful Blog Wix Evaluation">
         </div>
+      </section>
 
+      <section id="understandingTheUser">
         <h3 class="partial-width">
           Understanding the User
         </h3>
@@ -133,11 +141,15 @@
         <p class="partial-width">
           Also, locating the blog itself may not be as straightforward as it seems. How can we <strong>make the blog more easily findable</strong> on the site?
         </p>
+      </section>
 
-        <h2 class="partial-width jottfulblog-color-h2" id="iterate">
+      <section id="phase2Iterate">
+        <h2 class="partial-width jottfulblog-color-h2">
           Phase 2: Iterate
         </h2>
+      </section>
 
+      <section id="userStories">
         <h3 class="partial-width">
           User Stories
         </h3>
@@ -157,7 +169,9 @@
         <p class="partial-width">
           Almost as important as what will be included in the product are features not included. For this project, <strong>features we deemed out of scope</strong> include: tags, categories, RSS feeds, location functionality, and comments.
         </p>
+      </section>
 
+      <section id="listPage">
         <h3 class="partial-width">
           List Page
         </h3>
@@ -185,7 +199,9 @@
         <p class="partial-width">
           <strong>Variation 2 - Preview List</strong>. The compact nature of the preview list made it more appealing as a blog list choice. It also mimicked current design trends for blog list styles, which would add familiarity and trust to customer websites.
         </p>
+      </section>
 
+      <section id="addingaPost">
         <h3 class="partial-width">
           Adding a Post
         </h3>
@@ -217,7 +233,9 @@
         <p class="partial-width ">
           <strong>Variation 1: New post button on top</strong>. We decided to add a "Create New Post" button with the styling that matched the other image editing buttons. A redesign of those buttons would come later with a UX refresh.
         </p>
+      </section>
 
+      <section id="editingaPost">
         <h3 class="partial-width">
           Editing a Post
         </h3>
@@ -245,7 +263,9 @@
         <p class="partial-width ">
           At first, I created “add section” buttons since that’s how the developer originally built the infrastructure. But upon review, I decided the idea of “sections” was a back-end structure that shouldn’t be exposed to the user. I learned my lesson: don’t <strong>default to basing design off of engineering</strong>!</p>
         </p>
+      </section>
 
+      <section id="publishingaPost">
         <h3 class="partial-width">
           Publishing a Post
         </h3>
@@ -275,11 +295,15 @@
         <p class="partial-width ">
           At first I prioritized not taking up any more screen real estate, but found it to be less discoverable. I learned that <strong>adding a bulkier UI may be necessary to increase the discoverability</strong> of a key part of the workflow.
         </p>
+      </section>
 
-        <h2 class="partial-width jottfulblog-color-h2" id="validate">
+      <section id="phase3Validate">
+        <h2 class="partial-width jottfulblog-color-h2" >
           Phase 3: Validate
         </h2>
+      </section>
 
+      <section id="usabilityTesting">
         <h3 class="partial-width">
           Usability Testing
         </h3>
@@ -310,10 +334,15 @@
           <li><strong>Make the save indicator more obvious</strong>. Although the site was saving her progress, the indicator flashed only once per minute and there was no save button, so she wondered and hoped out loud that the page saved when she navigated away from it.</li>
           <li><strong>Remove confusing fields</strong> like “Title” while adding a hyperlink to minimize cognitive load when writing the post.</li>
         </ol>
+      </section>
 
-        <h2 class="partial-width jottfulblog-color-h2" id="finalize">
+      <section id="phase4Finalize">
+        <h2 class="partial-width jottfulblog-color-h2">
           Phase 4: Finalize
         </h2>
+      </section>
+
+      <section id="finalDesigns">
         <h3 class="partial-width">
           Final Designs
         </h3>
@@ -321,7 +350,9 @@
           I finalized the design, to hand off to the developer to implement within the various website styles. A feature highlight is shown below.
         </p>
         <img src="assets/images/jottfulblogcasestudy/FinalDesignHighlights.png" alt="Jottful Blog Final Design Highlights" class="image-full-width">
+      </section>
 
+      <section id="openQuestionsFutureWork">
         <h3 class="partial-width">
           Open Questions and Future Work
         </h3>
@@ -341,13 +372,17 @@
 
         <p class="partial-width centered">
           <br><br><a href="index.html#pastWork">Return to Work</a>
-        </p>
-        <img src="assets/images/brand/LHOutline.png" alt="Linde Huang minimal logo" class="page-end-logo">
-      </section>
-    </article>
+          <br>
+          <img src="assets/images/brand/LHOutline.png" alt="Linde Huang minimal logo" class="page-end-logo">
+      </p>
 
 
-    <footer>
+
+  </article>
+
+</div>
+
+<footer class="work-footer">
       <p>© 2020 COPYRIGHT <br>Designed & Developed by Linde Huang</p>
       <ul>
         <li><a href="https://www.linkedin.com/in/lindeluhuang" target="_blank"><img class="icon-inline" src="assets/images/headerfooter/LinkedInLogo.png"></a></li>
@@ -361,7 +396,7 @@
 <script>
   AOS.init();
 </script>
-<script src="assets/js/go-to-top-btn.js"></script>
+<script src="assets/js/toc.js"></script>
 
 
 </html>
