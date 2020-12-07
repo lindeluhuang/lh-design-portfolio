@@ -677,9 +677,10 @@ ul li, ol li {
     background-color: white;
     transition: background-color 0.5s;
   
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     border-right: 1px solid var(--light-grey-color);
   }
   
