@@ -32,7 +32,6 @@ if (window.screen.width > 840) {
     // listen for scroll
     document.addEventListener("scroll", function () {
         const pixelsScrolled = window.pageYOffset;
-        console.log(sectionFirst.offsetTop)
 
         // show TOC after scrolling past initial cover content
         if (pixelsScrolled >= sectionFirst.offsetTop - 250) {

@@ -644,20 +644,20 @@ ul li, ol li {
 
 /* -------- Table of Contents for Work Pages -------- */
 
-@media only screen and (max-width: 841px) {
+@media only screen and (max-width: 1041px) {
   nav.toc {
     display: none;
   }
 }
 
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 1040px) {
   .main-content.toc-visible {
     /* margin-left: 200px;
     transition: margin-left 0.5s ease; */
     /* transform: translateX(100px);  
     transition: transform 0.5s ease;  */
-    margin-left: 100px;
-    margin-right: -100px;
+    margin-left: 120px;
+    margin-right: -120px;
     transition: margin 0.5s ease;
   }
 
@@ -673,11 +673,10 @@ ul li, ol li {
     left: 0;
     width: 200px;
     height: 100vh;
-    /* background-color: #f2f2f2; */
     background-color: white;
     transition: background-color 0.5s;
-  
-    padding-top: 100px;
+    padding: 100px 20px 20px 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -687,7 +686,7 @@ ul li, ol li {
   nav.toc.visible a {
     color: var(--text-color);
     text-decoration: none;
-    margin: 5px 20px;
+    margin: 8px 20px;
     line-height: 1.2;
     
   }
