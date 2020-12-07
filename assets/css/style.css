@@ -558,15 +558,14 @@ ul li, ol li {
 }
 
 .home-paragraph-text {
-  font-size: 1.4em;
+  font-size: 1.2em;
   /* text-align: justify; */
+  /* hyphens: auto; */
 
 }
 
 .home-description-text {
-  font-size: 1.2em;
-  /* text-align: justify; */
-
+  /* font-size: 1.1em; */
 }
 
 .home-h2 {
