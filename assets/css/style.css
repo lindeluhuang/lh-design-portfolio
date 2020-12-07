@@ -560,6 +560,12 @@ ul li, ol li {
 
 }
 
+.home-description-text {
+  font-size: 1.2em;
+  /* text-align: justify; */
+
+}
+
 @media only screen and (max-width: 600px) {
   .home-paragraph-text {
     font-size: 1.1em;
