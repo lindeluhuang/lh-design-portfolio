@@ -17,16 +17,27 @@ tocContent = tocContent.concat(`<a href="#top" class="toc-title">${tocTitle}</a>
 sectionsAll.forEach(section => {
     let tocType = section.childNodes[1].nodeName;
     let tocId = section.id;
+
+    // check for h2 or h3 for formatting
     if (tocType == "H2") {
         let sectionContent = section.childNodes[1].innerText;
-        tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h2">${sectionContent}</a>`)
+
+        // visually condense if too many sections
+        if (sectionsAll.length > 20) {
+            tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h2-condensed">${sectionContent}</a>`)
+        } else {
+            tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h2">${sectionContent}</a>`)
+        }
     } else if (tocType == "H3") {
         let sectionContent = section.childNodes[1].innerText;
+        if (sectionsAll.length > 20) {
+            tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h3-condensed">${sectionContent}</a>`)
+        } else {
         tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h3">${sectionContent}</a>`)
+        }
     }
 })
 tocContent = tocContent.concat("</div>")
-
 
 // only on larger screens
 if (window.screen.width > 840) {
