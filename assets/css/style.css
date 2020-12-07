@@ -11,10 +11,11 @@
   --font-serif: 'Playfair Display', serif;
   --font-sans-serif: 'Overpass', sans-serif;
 
-
+  --inprogress-color: #4B688B;
+  --mreach-color: #C29F17;
   --absnetwork-color: #5E5A9D;
   --jottfulblog-color: #F09061;
-  --diversityinresearch-color: #B488B0;
+  --diversityinresearch-color: #859C67;
   --musings-color: #7D8DB7;
   --wishingwall-color: #A96367;
 
@@ -272,6 +273,7 @@ h3 {
 h4 {
   font-size: 1.563em;
   font-weight: 700;
+  line-height: 1.2;
   margin: .7em 0 .2em 0;
 
 }
@@ -280,13 +282,27 @@ h5 {
   font-size: 1.25em;
   font-weight: 700;
   text-align: center;
+  margin: 1em 0 .6em 0;
+}
+
+h5.jottful {
   border-top: solid .08em var(--jottfulblog-color);
   border-bottom: solid .08em var(--jottfulblog-color);
-  margin: 1em 0 .6em 0;
+}
+
+h5.mreach {
+  border-top: solid .08em var(--mreach-color);
+  border-bottom: solid .08em var(--mreach-color);
 }
 
 .quote-musings {
   border-left: solid .08em var(--musings-color);
+  padding: 1em 2em;
+  margin: 2em 0 3em 0;
+}
+
+.quote-mreach {
+  border-left: solid .08em var(--mreach-color);
   padding: 1em 2em;
   margin: 2em 0 3em 0;
 }
@@ -422,6 +438,8 @@ ul li, ol li {
 
 .brand-color-h1::after,
 .brand-secondary-color-h1::after,
+.inprogress-color-h1::after,
+.mreach-color-h1::after,
 .jottfulblog-color-h1::after,
 .absnetwork-color-h1::after,
 .diversityinresearch-color-h1::after,
@@ -441,6 +459,14 @@ ul li, ol li {
 
 .brand-secondary-color-h1::after {
   border-bottom: 0.25em solid var(--brand-secondary-color);
+}
+
+.inprogress-color-h1::after {
+  border-bottom: 0.25em solid var(--inprogress-color);
+}
+
+.mreach-color-h1::after {
+  border-bottom: 0.25em solid var(--mreach-color);
 }
 
 .jottfulblog-color-h1::after {
@@ -468,6 +494,8 @@ ul li, ol li {
 
 .brand-color-h2::after,
 .brand-secondary-color-h2::after,
+.inprogress-color-h2::after,
+.mreach-color-h2::after,
 .jottfulblog-color-h2::after,
 .absnetwork-color-h2::after,
 .diversityinresearch-color-h2::after,
@@ -486,6 +514,14 @@ ul li, ol li {
 
 .brand-secondary-color-h2::after {
   border-bottom: 4px solid var(--brand-secondary-color);
+}
+
+.inprogress-color-h2::after {
+  border-bottom: 4px solid var(--inprogress-color);
+}
+
+.mreach-color-h2::after {
+  border-bottom: 4px solid var(--mreach-color);
 }
 
 .jottfulblog-color-h2::after {
