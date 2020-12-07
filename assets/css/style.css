@@ -569,6 +569,13 @@ ul li, ol li {
 
 }
 
+.home-h2 {
+    margin: 2em 0 .5em 0;
+    padding-top: 90px; 
+    margin-top: calc(2em - 90px);
+    
+}
+
 @media only screen and (max-width: 600px) {
   .home-paragraph-text {
     font-size: 1.1em;
@@ -707,7 +714,8 @@ ul li, ol li {
   }
 
   article section {
-    padding-top: 60px; margin-top: -60px;
+    padding-top: 60px; 
+    margin-top: -60px;
   }
   
   .toc-title {
