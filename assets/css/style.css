@@ -113,19 +113,22 @@ nav {
 }
 
 .page-end-logo {
+  /* display: block;
+    text-align: center; */
   grid-column: 1/-1;
   justify-self: center;
   width: 50px;
   height: auto;
-  margin: 6em 0;
+  margin: 6em auto;
 }
 
 footer {
   background-color: var(--dark-grey-color);
-  margin-top: 1em;
+  margin: 1em 0 0 0;
   padding: 2em 1.5em;
   font-size: .9em;
   text-align: center;
+  width: 100%;
 }
 
 footer ul, footer p {
@@ -141,7 +144,7 @@ footer li {
 
 /* -------- Content Grid -------- */
 
-article {
+.container-grid {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 25px;
@@ -637,4 +640,58 @@ ul li, ol li {
 .top-button {
   height: 40px;
   width: auto;
+}
+
+/* -------- Table of Contents for Work Pages -------- */
+@media only screen and (min-width: 840px) {
+  nav.toc.visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    /* background-color: #f2f2f2; */
+    background-color: white;
+    transition: background-color 0.5s;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--light-grey-color);
+  }
+  
+  nav.toc.visible a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 5px 20px;
+    line-height: 1.2;
+    
+  }
+  
+  .toc-title {
+    font-size: 1.4em;
+    padding-bottom: 0.3em;
+    font-family: var(--font-serif);
+  }
+  
+  .toc-h2 {
+    font-size: 1.2em;
+  }
+  
+  .toc-h3 {
+    font-size: 1em;
+    padding-left: 1em;
+  }
+  
+  .main-content.toc-visible {
+    margin-left: 200px;
+    transition: margin-left 0.5s ease;
+  }
+
+  .work-footer {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
