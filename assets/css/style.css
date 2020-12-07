@@ -671,19 +671,34 @@ ul li, ol li {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 0;
     width: 240px;
     height: 100vh;
     background-color: white;
     transition: background-color 0.5s;
-    padding: 100px 0 20px 0;
 
+    border-right: 1px solid var(--light-grey-color);
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border-right: 1px solid var(--light-grey-color);
-    overflow: hidden;
   }
   
+  .toc-collection {
+    padding: 20px 0 160px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: white;
+    flex-grow: 1;
+  
+    overflow: auto;
+  
+    /* for Firefox */
+    min-height: 0;
+  }
+
   nav.toc.visible a {
     color: var(--text-color);
     text-decoration: none;

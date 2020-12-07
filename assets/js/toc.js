@@ -9,7 +9,7 @@ const sectionFirst = document.querySelector("section.content-start")
 const pageColor = document.querySelector("section#top").getAttribute("data-color");
 
 // set toc content
-let tocContent = ``
+let tocContent = `<div class="toc-collection">`
 // set title
 const tocTitle = sectionsAll[0].childNodes[1].innerText;
 tocContent = tocContent.concat(`<a href="#top" class="toc-title">${tocTitle}</a>`);
@@ -25,6 +25,8 @@ sectionsAll.forEach(section => {
         tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h3">${sectionContent}</a>`)
     }
 })
+tocContent = tocContent.concat("</div>")
+
 
 // only on larger screens
 if (window.screen.width > 840) {
