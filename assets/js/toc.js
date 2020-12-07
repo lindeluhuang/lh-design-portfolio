@@ -34,7 +34,7 @@ if (window.screen.width > 840) {
         const pixelsScrolled = window.pageYOffset;
 
         // show TOC after scrolling past initial cover content
-        if (pixelsScrolled >= sectionFirst.offsetTop - 250) {
+        if (pixelsScrolled >= sectionFirst.offsetTop - 100) {
             tocTag.classList.add("visible");
             tocTag.innerHTML = tocContent;
             mainContentTag.classList.add("toc-visible");
@@ -48,7 +48,7 @@ if (window.screen.width > 840) {
 
         // for each section, bold if looking at it
         sectionsAll.forEach(section => {
-            if (pixelsScrolled >= section.offsetTop - 250) {
+            if (pixelsScrolled >= section.offsetTop - 100) {
                 let sectionId = section.id;
                 const tocListTag = document.querySelectorAll("nav.toc a");
                 tocListTag.forEach(tocItem => {
