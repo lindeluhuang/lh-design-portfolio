@@ -19,7 +19,6 @@
   --musings-color: #7D8DB7;
   --wishingwall-color: #A96367;
 
-
 }
 
 html {
@@ -43,8 +42,6 @@ a {
 
 
 /* -------- Navigation & Footer -------- */
-
-
 
 .sticky {
   position: fixed;
@@ -166,13 +163,11 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-.partial-width {
-  grid-column: 2/12;
+  .partial-width {
+   grid-column: 2/12;
   /* grid-column: 1/-1; */
+  }
 }
-}
-
-
 
 .image-full-width {
   grid-column: 1/-1;
@@ -222,7 +217,6 @@ section {
   .image-half-width-centered,
   .image-third-width {
     grid-column: 1/-1;
-
   }
 
   .image-quarter-width {
@@ -273,7 +267,6 @@ h3 {
   margin: .5em 0 .5em 0;
 }
 
-
 h4 {
   font-size: 1.563em;
   font-weight: 700;
@@ -319,7 +312,6 @@ h5.mreach {
   border-bottom: solid .08em var(--musings-color);
   margin: 1em 0 .6em 0;
 }
-
 
 body {
   font-family: var(--font-sans-serif);
@@ -381,35 +373,6 @@ ul li, ol li {
   transform: scale(1.025);
   filter: drop-shadow(2px 2px 8px gray);
 }
-
-/* .hover-trim img {
-  display: block;
-}
-
-.hover-trim {
-  display: inline-block;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-}
-
-.hover-trim::before {
-  content: '';
-  position: absolute;
-  border: white solid 6px;
-  top: 12px;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  opacity: 0;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-.hover-trim:hover::before, .hover-trim:focus::before, .hover-trim:active::before {
-  opacity: 1;
-} */
 
 .img-border {
   border: 1px solid var(--dark-grey-color);
@@ -493,9 +456,6 @@ ul li, ol li {
   border-bottom: 0.25em solid var(--wishingwall-color);
 }
 
-
-
-
 .brand-color-h2::after,
 .brand-secondary-color-h2::after,
 .inprogress-color-h2::after,
@@ -549,9 +509,6 @@ ul li, ol li {
 }
 
 
-
-
-
 /* -------- Home Page Only -------- */
 
 .home-header-text {
@@ -562,11 +519,6 @@ ul li, ol li {
   font-size: 1.2em;
   /* text-align: justify; */
   /* hyphens: auto; */
-
-}
-
-.home-description-text {
-  /* font-size: 1.1em; */
 }
 
 .home-h2 {
@@ -585,8 +537,6 @@ ul li, ol li {
 }
 
 
-
-
 /* -------- Coming Soon -------- */
 .coming-soon {
   background-color: var(--light-grey-color);
@@ -596,17 +546,12 @@ ul li, ol li {
 }
 
 
-
-
 /* -------- Blog Posts -------- */
 
 .blog-img {
   margin-top: 3em;
   margin-bottom: .5em;
 }
-
-
-
 
 
 /* -------- Overriding Spacing -------- */
