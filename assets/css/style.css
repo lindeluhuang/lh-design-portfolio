@@ -576,7 +576,11 @@ ul li, ol li {
 /* -------- Scroll to Top Button -------- */
 
 @media only screen and (min-width: 1041px) {
-  nav.toc {
+  #scroll-to-top-btn {
+    display: none;
+  }
+
+  .top-button {
     display: none;
   }
 }

@@ -1,5 +1,3 @@
-
-
 //Get the button:
 mybutton = document.getElementById("scroll-to-top-btn");
 
