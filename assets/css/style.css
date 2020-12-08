@@ -523,8 +523,8 @@ ul li, ol li {
 
 .home-h2 {
     margin: 2em 0 .5em 0;
-    padding-top: 90px; 
-    margin-top: calc(2em - 90px);
+    padding-top: 120px; 
+    margin-top: calc(2em - 120px);
     /* text-align: center; */
     
 }
