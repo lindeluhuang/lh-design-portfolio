@@ -33,50 +33,46 @@ sectionsAll.forEach(section => {
         if (sectionsAll.length > 20) {
             tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h3-condensed">${sectionContent}</a>`)
         } else {
-        tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h3">${sectionContent}</a>`)
+            tocContent = tocContent.concat(`<a href="#${tocId}" class="toc-h3">${sectionContent}</a>`)
         }
     }
 })
 tocContent = tocContent.concat("</div>")
 
-// only on larger screens
-if (window.screen.width > 840) {
+// listen for scroll
+document.addEventListener("scroll", function () {
+    const pixelsScrolled = window.pageYOffset;
 
-    // listen for scroll
-    document.addEventListener("scroll", function () {
-        const pixelsScrolled = window.pageYOffset;
+    // show TOC after scrolling past initial cover content
+    if (pixelsScrolled >= sectionFirst.offsetTop - 100) {
+        tocTag.classList.add("visible");
+        tocTag.innerHTML = tocContent;
+        mainContentTag.classList.add("toc-visible");
+        mainContentTag.classList.remove("toc-hidden");
+    } else {
+        tocTag.classList.remove("visible")
+        tocTag.innerHTML = "";
+        mainContentTag.classList.remove("toc-visible");
+        mainContentTag.classList.add("toc-hidden");
+    }
 
-        // show TOC after scrolling past initial cover content
-        if (pixelsScrolled >= sectionFirst.offsetTop - 100) {
-            tocTag.classList.add("visible");
-            tocTag.innerHTML = tocContent;
-            mainContentTag.classList.add("toc-visible");
-            mainContentTag.classList.remove("toc-hidden");
-        } else {
-            tocTag.classList.remove("visible")
-            tocTag.innerHTML = "";
-            mainContentTag.classList.remove("toc-visible");
-            mainContentTag.classList.add("toc-hidden");
+    // for each section, bold if looking at it
+    sectionsAll.forEach(section => {
+        if (pixelsScrolled >= section.offsetTop - 100) {
+            let sectionId = section.id;
+            const tocListTag = document.querySelectorAll("nav.toc a");
+            tocListTag.forEach(tocItem => {
+                let tocItemString = tocItem.hash.substring(1);
+                if (tocItemString == sectionId) {
+                    tocItem.style.fontWeight = "bold";
+                    tocItem.style.color = `var(--${pageColor})`;
+                } else {
+                    tocItem.style.fontWeight = "400";
+                    tocItem.style.color = "var(--text-color)";
+                }
+            })
         }
-
-        // for each section, bold if looking at it
-        sectionsAll.forEach(section => {
-            if (pixelsScrolled >= section.offsetTop - 100) {
-                let sectionId = section.id;
-                const tocListTag = document.querySelectorAll("nav.toc a");
-                tocListTag.forEach(tocItem => {
-                    let tocItemString = tocItem.hash.substring(1);
-                    if (tocItemString == sectionId) {
-                        tocItem.style.fontWeight = "bold";
-                        tocItem.style.color = `var(--${pageColor})`;
-                    } else {
-                        tocItem.style.fontWeight = "400";
-                        tocItem.style.color = "var(--text-color)";
-                    }
-                })
-            }
-        })
-
     })
 
-}
+})
+
