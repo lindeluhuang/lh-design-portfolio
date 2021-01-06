@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&display=swap');
+
+
 /* -------- Page-wide -------- */
 
 :root {
-  --brand-color:#4A82BB;
+  /* --font-serif: 'Playfair Display', serif; */
+  --font-sans-serif: 'Palanquin', sans-serif;
+
+  /* --brand-color:#4A82BB; */
+  --brand-color:#039DAB;
   --brand-secondary-color: #FECB78;
 
-  --text-color: #091017;
-  --dark-grey-color: #B5BABF;
+  --text-color: #323b44;
+  --dark-grey-color: #636a70;
   --light-grey-color: #eaeaea;
-
-  --font-serif: 'Playfair Display', serif;
-  --font-sans-serif: 'Overpass', sans-serif;
 
   --inprogress-color: #4B688B;
   --mreach-color: #C29F17;
@@ -91,7 +95,7 @@ nav {
 .main-nav li {
   padding: 2em 1.5em 0 1.5em;
   list-style: none;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -122,7 +126,7 @@ nav {
 }
 
 footer {
-  background-color: var(--light-grey-color);
+  color: var(--dark-grey-color);
   margin: 1em 0 0 0;
   padding: 2em 0;
   font-size: .9em;
@@ -234,8 +238,12 @@ html {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
-  font-family: var(--font-serif);
+h1 {
+  font-family: var(--font-sans-serif);
+}
+
+h2, h3 {
+  font-family: var(--font-sans-serif);
 }
 
 h4, h5 {
@@ -243,24 +251,30 @@ h4, h5 {
 }
 
 h1 {
-  margin: 4em 0 0 0;
+  margin: 3em 0 0 0;
   font-size: 1em;
   line-height: 1.2em;
   text-align: center;
-  margin-top: 4em;
   font-size: 3.052em;
+}
+
+.toppage-header-text {
+  text-align: left;
+  margin-bottom: 0;
 }
 
 
 h2 {
   font-size: 2.441em;
-  margin: 2em 0 .5em 0;
+  margin: 2em 0 0.7em 0;
   right: 1em;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.953em;
   margin: .5em 0 .5em 0;
+  line-height: 1.2;
 }
 
 h4 {
@@ -371,7 +385,7 @@ ul li, ol li {
 }
 
 .img-border {
-  border: 1px solid var(--dark-grey-color);
+  border: 1px solid var(--light-grey-color);
 }
 
 .video-full-width {
@@ -399,64 +413,6 @@ ul li, ol li {
 /* -------- Typography Style Block Colors -------- */
 
 
-.brand-color-h1::after,
-.brand-secondary-color-h1::after,
-.inprogress-color-h1::after,
-.mreach-color-h1::after,
-.jottfulblog-color-h1::after,
-.absnetwork-color-h1::after,
-.diversityinresearch-color-h1::after,
-.musings-color-h1::after,
-.explorationsinteractivity-color-h1::after,
-.wishingwall-color-h1::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  top: 2px;
-  z-index: -1;
-}
-
-.brand-color-h1::after {
-  border-bottom: 0.25em solid var(--brand-color);
-}
-
-.brand-secondary-color-h1::after {
-  border-bottom: 0.25em solid var(--brand-secondary-color);
-}
-
-.inprogress-color-h1::after {
-  border-bottom: 0.25em solid var(--inprogress-color);
-}
-
-.mreach-color-h1::after {
-  border-bottom: 0.25em solid var(--mreach-color);
-}
-
-.jottfulblog-color-h1::after {
-  border-bottom: 0.25em solid var(--jottfulblog-color);
-}
-
-.absnetwork-color-h1::after {
-  border-bottom: 0.25em solid var(--absnetwork-color);
-}
-
-.diversityinresearch-color-h1::after {
-  border-bottom: 0.25em solid var(--diversityinresearch-color);
-}
-
-.musings-color-h1::after {
-  border-bottom: 0.25em solid var(--musings-color);
-}
-
-.explorationsinteractivity-color-h1::after {
-  border-bottom: 0.25em solid var(--explorationsinteractivity-color);
-}
-
-.wishingwall-color-h1::after {
-  border-bottom: 0.25em solid var(--wishingwall-color);
-}
-
 .brand-color-h2::after,
 .brand-secondary-color-h2::after,
 .inprogress-color-h2::after,
@@ -471,7 +427,7 @@ ul li, ol li {
   position: relative;
   display: block;
   width: 50px;
-  top: .1em;
+  top: .15em;
 }
 
 .brand-color-h2::after {
@@ -518,11 +474,14 @@ ul li, ol li {
 /* -------- Home Page Only -------- */
 
 .home-header-text {
+  margin-top: 4em;
   margin-bottom: .5em;
+  text-align: left;
 }
 
 .home-paragraph-text {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  color: var( --dark-grey-color);
   /* text-align: justify; */
   /* hyphens: auto; */
 }
@@ -684,7 +643,8 @@ ul li, ol li {
   
   .toc-title {
     font-size: 1.3em;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
     line-height: 1.2;
   }
   
