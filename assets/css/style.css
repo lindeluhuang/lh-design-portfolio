@@ -429,7 +429,7 @@ ul li, ol li {
   position: relative;
   display: block;
   width: 50px;
-  top: .15em;
+  top: .25em;
 }
 
 .brand-color-h2::after {
